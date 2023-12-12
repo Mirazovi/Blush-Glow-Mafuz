@@ -1,3 +1,4 @@
+
 body {
   --heading-font: 'Prata', serif;
   --heading-font-weight: 400;
@@ -886,8 +887,8 @@ a {
 /** Swiper Slide Arrows with background 3
 --------------------------------------------------------------*/
 .icon-arrow {
-  width: 90px;
-  height: 90px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
 }
 
@@ -1776,7 +1777,31 @@ span.accordion-title {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
+
+/* Custom CSS */
+.hover-overlay {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.product-image {
+  transition: filter 0.3s ease-in-out;
+}
+
+.product-item:hover .hover-overlay {
+  opacity: 1;
+}
+
+.product-item:hover .product-image {
+  filter: blur(4px);
+}
+
+.product-item:hover .element-title a {
+  color: #fff; /* Change text color on hover */
+
 .open-up {
   overflow: hidden;
   max-width: 100%;
+
 }

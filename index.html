@@ -37,10 +37,30 @@
 
   <body class="homepage">
     <div class="preloader text-white fs-6 text-uppercase overflow-hidden"></div>
- <button onclick="generateVCard()">save contact</button>
- <a href="./name.vcf">dd</a>
+
+
+    <!-- contact nav bar -->
+    <section class="py-2 text-black" style="background: #33323216">
+      <div
+        class="my-2 text-center d-lg-flex justify-content-between align-items-center"
+        style="max-width: 1264px; margin: 0 auto"
+      >
+        <p class="mb-0" id="currentDate"></p>
+        <div
+          class="gap-3 align-items-center d-sm-flex justify-content-center text-center"
+        >
+          <p class="mb-0">Call: 09678-300400</p>
+          <p class="mb-0">Email: example@gmail.com</p>
+          <button class="px-3 border-1 bg-transparent rounded-2 py-2">
+            Save Contact
+          </button>
+        </div>
+      </div>
+    </section>
+
+
     <nav
-      class="navbar navbar-expand-lg text-uppercase fs-6 py-0 px-0 px-md-3 border-bottom align-items-center"
+      class="navbar container navbar-expand-lg text-uppercase fs-6 py-0 px-0 px-md-3 border-bottom align-items-center"
     >
       <div class="container-fluid">
         <div class="row justify-content-between align-items-center w-100 py-2">
@@ -83,7 +103,7 @@
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="./about.html">About</a>
                   </li>
                   <li class="nav-item">
                     <a href="/contact.html" class="nav-link border px-3"
@@ -318,229 +338,387 @@
           <div class="line-img my-2">
             <img src="images/line.png" alt="" />
           </div>
-          <h4 class="text-uppercase mb-0">New Arrivals</h4>
+          <h4 class="text-uppercase mb-0">FACIAL</h4>
           <div class="line-img my-2">
             <img src="images/line.png" alt="" />
           </div>
         </div>
         <div class="swiper product-swiper overflow-hidden">
           <div class="swiper-wrapper d-flex">
+            <!-- css with style slider  -->
             <div class="swiper-slide">
-              <div class="product-item">
+              <div class="product-item position-relative overflow-hidden">
                 <div class="image-holder position-relative">
-                  <a href="single-product.html">
+                  <div class="position-relative">
                     <img
                       src="images/product-item5.jpg"
                       alt="categories"
                       class="product-image img-fluid"
                     />
-                  </a>
-                  <a href="wishlist.html" class="btn-icon btn-wishlist">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      class="svg-color"
+                    <div
+                      class="position-absolute top-0 start-0 h-100 w-100 d-flex justify-content-center align-items-center bg-transparent hover-overlay"
                     >
-                      <use xlink:href="#heart"></use>
-                    </svg>
-                  </a>
-                  <a href="wishlist.html" class="btn-icon btn-cart">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      class="svg-color"
-                    >
-                      <use xlink:href="#cart"></use>
-                    </svg>
-                  </a>
-                  <div class="product-content">
-                    <h5 class="element-title text-uppercase fs-6 mt-3">
-                      <a href="single-product.html">Natural Glow</a>
-                    </h5>
-                    <a
-                      href="#"
-                      class="text-decoration-none"
-                      data-after="Add to cart"
-                      ><span>$95.00</span></a
-                    >
+                      <button
+                        class="py-2 rounded-1"
+                        style="
+                          background-color: #ffffff87;
+                          border: 2px #ffff solid;
+                        "
+                      >
+                        Book Now
+                      </button>
+                    </div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="product-item">
-                <div class="image-holder position-relative">
-                  <a href="single-product.html">
-                    <img
-                      src="images/product-item13.jpg"
-                      alt="categories"
-                      class="product-image img-fluid"
-                    />
-                  </a>
-                  <a href="wishlist.html" class="btn-icon btn-wishlist">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      class="svg-color"
-                    >
-                      <use xlink:href="#heart"></use>
-                    </svg>
-                  </a>
-                  <a href="wishlist.html" class="btn-icon btn-cart">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      class="svg-color"
-                    >
-                      <use xlink:href="#cart"></use>
-                    </svg>
-                  </a>
-                  <div class="product-content">
-                    <h5 class="element-title text-uppercase fs-6 mt-3">
-                      <a href="single-product.html">Natural Glow</a>
-                    </h5>
-                    <a
-                      href="#"
-                      class="text-decoration-none"
-                      data-after="Add to cart"
-                      ><span>$95.00</span></a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="product-item">
-                <div class="image-holder position-relative">
-                  <a href="single-product.html">
-                    <img
-                      src="images/product-item8.jpg"
-                      alt="categories"
-                      class="product-image img-fluid"
-                    />
-                  </a>
-                  <a href="wishlist.html" class="btn-icon btn-wishlist">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      class="svg-color"
-                    >
-                      <use xlink:href="#heart"></use>
-                    </svg>
-                  </a>
-                  <a href="wishlist.html" class="btn-icon btn-cart">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      class="svg-color"
-                    >
-                      <use xlink:href="#cart"></use>
-                    </svg>
-                  </a>
-                  <div class="product-content">
-                    <h5 class="element-title text-uppercase fs-6 mt-3">
-                      <a href="single-product.html">Natural Glow</a>
-                    </h5>
-                    <a
-                      href="#"
-                      class="text-decoration-none"
-                      data-after="Add to cart"
-                      ><span>$95.00</span></a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
 
-            <div class="swiper-slide">
-              <div class="product-item">
-                <div class="image-holder position-relative">
-                  <a href="single-product.html">
-                    <img
-                      src="images/product-item12.jpg"
-                      alt="categories"
-                      class="product-image img-fluid"
-                    />
-                  </a>
-                  <a href="wishlist.html" class="btn-icon btn-wishlist">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      class="svg-color"
-                    >
-                      <use xlink:href="#heart"></use>
-                    </svg>
-                  </a>
-                  <a href="wishlist.html" class="btn-icon btn-cart">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      class="svg-color"
-                    >
-                      <use xlink:href="#cart"></use>
-                    </svg>
-                  </a>
-                  <div class="product-content">
+                  <div
+                    class="d-flex justify-content-between align-items-center mt-2"
+                  >
                     <h5 class="element-title text-uppercase fs-6 mt-3">
-                      <a href="single-product.html">Natural Glow</a>
+                      <a class="text-black" href="single-product.html"
+                        >Regular Facial</a
+                      >
                     </h5>
                     <a
                       href="#"
                       class="text-decoration-none"
                       data-after="Add to cart"
-                      ><span>$95.00</span></a
+                      ><span class="fs-5 fw-bolder">$50.00</span></a
                     >
                   </div>
                 </div>
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="product-item">
+              <div class="product-item position-relative overflow-hidden">
                 <div class="image-holder position-relative">
-                  <a href="single-product.html">
+                  <div class="position-relative">
                     <img
-                      src="images/product-item9.jpg"
+                      src="images/product-item5.jpg"
                       alt="categories"
                       class="product-image img-fluid"
                     />
-                  </a>
-                  <a href="wishlist.html" class="btn-icon btn-wishlist">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      class="svg-color"
+                    <div
+                      class="position-absolute top-0 start-0 h-100 w-100 d-flex justify-content-center align-items-center bg-transparent hover-overlay"
                     >
-                      <use xlink:href="#heart"></use>
-                    </svg>
-                  </a>
-                  <a href="wishlist.html" class="btn-icon btn-cart">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      class="svg-color"
-                    >
-                      <use xlink:href="#cart"></use>
-                    </svg>
-                  </a>
-                  <div class="product-content">
+                      <button
+                        class="py-2 rounded-1"
+                        style="
+                          background-color: #ffffff87;
+                          border: 2px #ffff solid;
+                        "
+                      >
+                        Book Now
+                      </button>
+                    </div>
+                  </div>
+
+                  <div
+                    class="d-flex justify-content-between align-items-center mt-2"
+                  >
                     <h5 class="element-title text-uppercase fs-6 mt-3">
-                      <a href="single-product.html">Natural Glow</a>
+                      <a class="text-black" href="single-product.html"
+                        >Antiaging Faciall</a
+                      >
                     </h5>
                     <a
                       href="#"
                       class="text-decoration-none"
                       data-after="Add to cart"
-                      ><span>$95.00</span></a
+                      ><span class="fs-5 fw-bolder">$70.00</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-item position-relative overflow-hidden">
+                <div class="image-holder position-relative">
+                  <div class="position-relative">
+                    <img
+                      src="images/product-item5.jpg"
+                      alt="categories"
+                      class="product-image img-fluid"
+                    />
+                    <div
+                      class="position-absolute top-0 start-0 h-100 w-100 d-flex justify-content-center align-items-center bg-transparent hover-overlay"
+                    >
+                      <button
+                        class="py-2 rounded-1"
+                        style="
+                          background-color: #ffffff87;
+                          border: 2px #ffff solid;
+                        "
+                      >
+                        Book Now
+                      </button>
+                    </div>
+                  </div>
+
+                  <div
+                    class="d-flex justify-content-between align-items-center mt-2"
+                  >
+                    <h5 class="element-title text-uppercase fs-6 mt-3">
+                      <a class="text-black" href="single-product.html"
+                        >Hydrationg Facial</a
+                      >
+                    </h5>
+                    <a
+                      href="#"
+                      class="text-decoration-none"
+                      data-after="Add to cart"
+                      ><span class="fs-5 fw-bolder">$70.00</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-item position-relative overflow-hidden">
+                <div class="image-holder position-relative">
+                  <div class="position-relative">
+                    <img
+                      src="images/product-item5.jpg"
+                      alt="categories"
+                      class="product-image img-fluid"
+                    />
+                    <div
+                      class="position-absolute top-0 start-0 h-100 w-100 d-flex justify-content-center align-items-center bg-transparent hover-overlay"
+                    >
+                      <button
+                        class="py-2 rounded-1"
+                        style="
+                          background-color: #ffffff87;
+                          border: 2px #ffff solid;
+                        "
+                      >
+                        Book Now
+                      </button>
+                    </div>
+                  </div>
+
+                  <div
+                    class="d-flex justify-content-between align-items-center mt-2"
+                  >
+                    <h5 class="element-title text-uppercase fs-6 mt-3">
+                      <a class="text-black" href="single-product.html"
+                        >Acne Treatment</a
+                      >
+                    </h5>
+                    <a
+                      href="#"
+                      class="text-decoration-none"
+                      data-after="Add to cart"
+                      ><span class="fs-5 fw-bolder">$70.00</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-item position-relative overflow-hidden">
+                <div class="image-holder position-relative">
+                  <div class="position-relative">
+                    <img
+                      src="images/product-item5.jpg"
+                      alt="categories"
+                      class="product-image img-fluid"
+                    />
+                    <div
+                      class="position-absolute top-0 start-0 h-100 w-100 d-flex justify-content-center align-items-center bg-transparent hover-overlay"
+                    >
+                      <button
+                        class="py-2 rounded-1"
+                        style="
+                          background-color: #ffffff87;
+                          border: 2px #ffff solid;
+                        "
+                      >
+                        Book Now
+                      </button>
+                    </div>
+                  </div>
+
+                  <div
+                    class="d-flex justify-content-between align-items-center mt-2"
+                  >
+                    <h5 class="element-title text-uppercase fs-6 mt-3">
+                      <a class="text-black" href="single-product.html"
+                        >Microdermabrasion</a
+                      >
+                    </h5>
+                    <a
+                      href="#"
+                      class="text-decoration-none"
+                      data-after="Add to cart"
+                      ><span class="fs-5 fw-bolder">$70.00</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-item position-relative overflow-hidden">
+                <div class="image-holder position-relative">
+                  <div class="position-relative">
+                    <img
+                      src="images/product-item5.jpg"
+                      alt="categories"
+                      class="product-image img-fluid"
+                    />
+                    <div
+                      class="position-absolute top-0 start-0 h-100 w-100 d-flex justify-content-center align-items-center bg-transparent hover-overlay"
+                    >
+                      <button
+                        class="py-2 rounded-1"
+                        style="
+                          background-color: #ffffff87;
+                          border: 2px #ffff solid;
+                        "
+                      >
+                        Book Now
+                      </button>
+                    </div>
+                  </div>
+
+                  <div
+                    class="d-flex justify-content-between align-items-center mt-2"
+                  >
+                    <h5 class="element-title text-uppercase fs-6 mt-3">
+                      <a class="text-black" href="single-product.html"
+                        >Hydra Facial</a
+                      >
+                    </h5>
+                    <a
+                      href="#"
+                      class="text-decoration-none"
+                      data-after="Add to cart"
+                      ><span class="fs-5 fw-bolder">$90.00</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-item position-relative overflow-hidden">
+                <div class="image-holder position-relative">
+                  <div class="position-relative">
+                    <img
+                      src="images/product-item5.jpg"
+                      alt="categories"
+                      class="product-image img-fluid"
+                    />
+                    <div
+                      class="position-absolute top-0 start-0 h-100 w-100 d-flex justify-content-center align-items-center bg-transparent hover-overlay"
+                    >
+                      <button
+                        class="py-2 rounded-1"
+                        style="
+                          background-color: #ffffff87;
+                          border: 2px #ffff solid;
+                        "
+                      >
+                        Book Now
+                      </button>
+                    </div>
+                  </div>
+
+                  <div
+                    class="d-flex justify-content-between align-items-center mt-2"
+                  >
+                    <h5 class="element-title text-uppercase fs-6 mt-3">
+                      <a class="text-black" href="single-product.html"
+                        >Face Lifting</a
+                      >
+                    </h5>
+                    <a
+                      href="#"
+                      class="text-decoration-none"
+                      data-after="Add to cart"
+                      ><span class="fs-5 fw-bolder">$90.00</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-item position-relative overflow-hidden">
+                <div class="image-holder position-relative">
+                  <div class="position-relative">
+                    <img
+                      src="images/product-item5.jpg"
+                      alt="categories"
+                      class="product-image img-fluid"
+                    />
+                    <div
+                      class="position-absolute top-0 start-0 h-100 w-100 d-flex justify-content-center align-items-center bg-transparent hover-overlay"
+                    >
+                      <button
+                        class="py-2 rounded-1"
+                        style="
+                          background-color: #ffffff87;
+                          border: 2px #ffff solid;
+                        "
+                      >
+                        Book Now
+                      </button>
+                    </div>
+                  </div>
+
+                  <div
+                    class="d-flex justify-content-between align-items-center mt-2"
+                  >
+                    <h5 class="element-title text-uppercase fs-6 mt-3">
+                      <a class="text-black" href="single-product.html"
+                        >Chemical Peel</a
+                      >
+                    </h5>
+                    <a
+                      href="#"
+                      class="text-decoration-none"
+                      data-after="Add to cart"
+                      ><span class="fs-5 fw-bolder">$80.00</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-item position-relative overflow-hidden">
+                <div class="image-holder position-relative">
+                  <div class="position-relative">
+                    <img
+                      src="images/product-item5.jpg"
+                      alt="categories"
+                      class="product-image img-fluid"
+                    />
+                    <div
+                      class="position-absolute top-0 start-0 h-100 w-100 d-flex justify-content-center align-items-center bg-transparent hover-overlay"
+                    >
+                      <button
+                        class="py-2 rounded-1"
+                        style="
+                          background-color: #ffffff87;
+                          border: 2px #ffff solid;
+                        "
+                      >
+                        Book Now
+                      </button>
+                    </div>
+                  </div>
+
+                  <div
+                    class="d-flex justify-content-between align-items-center mt-2"
+                  >
+                    <h5 class="element-title text-uppercase fs-6 mt-3">
+                      <a class="text-black" href="single-product.html"
+                        >Microneedling</a
+                      >
+                    </h5>
+                    <a
+                      href="#"
+                      class="text-decoration-none"
+                      data-after="Add to cart"
+                      ><span class="fs-5 fw-bolder">$100.00</span></a
                     >
                   </div>
                 </div>
@@ -550,15 +728,11 @@
         </div>
         <div class="icon-arrow no-outline icon-arrow-left bg-light"></div>
         <div class="icon-arrow no-outline icon-arrow-right bg-light"></div>
-        <div class="text-center mt-5">
-          <a href="shop-sidebar.html" class="btn-link">View All Products</a>
-        </div>
       </div>
     </section>
-
     <section
-      id="best-sellers"
-      class="best-sellers product-carousel position-relative py-5 my-5 open-up"
+      id="new-arrival"
+      class="new-arrival product-carousel position-relative open-up"
       data-aos="zoom-out"
     >
       <div class="container">
@@ -568,7 +742,7 @@
           <div class="line-img my-2">
             <img src="images/line.png" alt="" />
           </div>
-          <h4 class="text-uppercase mb-0">Best Selling Items</h4>
+          <h4 class="text-uppercase mb-0">THREADING</h4>
           <div class="line-img my-2">
             <img src="images/line.png" alt="" />
           </div>
@@ -576,220 +750,126 @@
         <div class="swiper product-swiper overflow-hidden">
           <div class="swiper-wrapper d-flex">
             <div class="swiper-slide">
-              <div class="product-item">
+              <div class="product-item position-relative overflow-hidden">
                 <div class="image-holder position-relative">
-                  <a href="single-product.html">
+                  <div class="position-relative">
                     <img
-                      src="images/product-item7.jpg"
+                      src="images/product-item5.jpg"
                       alt="categories"
                       class="product-image img-fluid"
                     />
-                  </a>
-                  <a href="wishlist.html" class="btn-icon btn-wishlist">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      class="svg-color"
+                    <div
+                      class="position-absolute top-0 start-0 h-100 w-100 d-flex justify-content-center align-items-center bg-transparent hover-overlay"
                     >
-                      <use xlink:href="#heart"></use>
-                    </svg>
-                  </a>
-                  <a href="wishlist.html" class="btn-icon btn-cart">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      class="svg-color"
-                    >
-                      <use xlink:href="#cart"></use>
-                    </svg>
-                  </a>
-                  <div class="product-content">
+                      <button
+                        class="py-2 rounded-1"
+                        style="
+                          background-color: #ffffff87;
+                          border: 2px #ffff solid;
+                        "
+                      >
+                        Book Now
+                      </button>
+                    </div>
+                  </div>
+
+                  <div
+                    class="d-flex justify-content-between align-items-center mt-2"
+                  >
                     <h5 class="element-title text-uppercase fs-6 mt-3">
-                      <a href="single-product.html">Natural Glow</a>
+                      <a class="text-black" href="single-product.html"
+                        >Eye Brows</a
+                      >
                     </h5>
                     <a
                       href="#"
                       class="text-decoration-none"
                       data-after="Add to cart"
-                      ><span>$95.00</span></a
+                      ><span class="fs-5 fw-bolder">$8.00</span></a
                     >
                   </div>
                 </div>
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="product-item">
+              <div class="product-item position-relative overflow-hidden">
                 <div class="image-holder position-relative">
-                  <a href="single-product.html">
+                  <div class="position-relative">
                     <img
-                      src="images/product-item11.jpg"
+                      src="images/product-item5.jpg"
                       alt="categories"
                       class="product-image img-fluid"
                     />
-                  </a>
-                  <a href="wishlist.html" class="btn-icon btn-wishlist">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      class="svg-color"
+                    <div
+                      class="position-absolute top-0 start-0 h-100 w-100 d-flex justify-content-center align-items-center bg-transparent hover-overlay"
                     >
-                      <use xlink:href="#heart"></use>
-                    </svg>
-                  </a>
-                  <a href="wishlist.html" class="btn-icon btn-cart">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      class="svg-color"
-                    >
-                      <use xlink:href="#cart"></use>
-                    </svg>
-                  </a>
-                  <div class="product-content">
+                      <button
+                        class="py-2 rounded-1"
+                        style="
+                          background-color: #ffffff87;
+                          border: 2px #ffff solid;
+                        "
+                      >
+                        Book Now
+                      </button>
+                    </div>
+                  </div>
+
+                  <div
+                    class="d-flex justify-content-between align-items-center mt-2"
+                  >
                     <h5 class="element-title text-uppercase fs-6 mt-3">
-                      <a href="single-product.html">Natural Glow</a>
+                      <a class="text-black" href="single-product.html"
+                        >Upper Lips</a
+                      >
                     </h5>
                     <a
                       href="#"
                       class="text-decoration-none"
                       data-after="Add to cart"
-                      ><span>$95.00</span></a
+                      ><span class="fs-5 fw-bolder">$5.00</span></a
                     >
                   </div>
                 </div>
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="product-item">
+              <div class="product-item position-relative overflow-hidden">
                 <div class="image-holder position-relative">
-                  <a href="single-product.html">
+                  <div class="position-relative">
                     <img
-                      src="images/product-item1.jpg"
+                      src="images/product-item5.jpg"
                       alt="categories"
                       class="product-image img-fluid"
                     />
-                  </a>
-                  <a href="wishlist.html" class="btn-icon btn-wishlist">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      class="svg-color"
+                    <div
+                      class="position-absolute top-0 start-0 h-100 w-100 d-flex justify-content-center align-items-center bg-transparent hover-overlay"
                     >
-                      <use xlink:href="#heart"></use>
-                    </svg>
-                  </a>
-                  <a href="wishlist.html" class="btn-icon btn-cart">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      class="svg-color"
-                    >
-                      <use xlink:href="#cart"></use>
-                    </svg>
-                  </a>
-                  <div class="product-content">
-                    <h5 class="element-title text-uppercase fs-6 mt-3">
-                      <a href="single-product.html">Natural Glow</a>
-                    </h5>
-                    <a
-                      href="#"
-                      class="text-decoration-none"
-                      data-after="Add to cart"
-                      ><span>$95.00</span></a
-                    >
+                      <button
+                        class="py-2 rounded-1"
+                        style="
+                          background-color: #ffffff87;
+                          border: 2px #ffff solid;
+                        "
+                      >
+                        Book Now
+                      </button>
+                    </div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="product-item">
-                <div class="image-holder position-relative">
-                  <a href="single-product.html">
-                    <img
-                      src="images/product-item3.jpg"
-                      alt="categories"
-                      class="product-image img-fluid"
-                    />
-                  </a>
-                  <a href="wishlist.html" class="btn-icon btn-wishlist">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      class="svg-color"
-                    >
-                      <use xlink:href="#heart"></use>
-                    </svg>
-                  </a>
-                  <a href="wishlist.html" class="btn-icon btn-cart">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      class="svg-color"
-                    >
-                      <use xlink:href="#cart"></use>
-                    </svg>
-                  </a>
-                  <div class="product-content">
+
+                  <div
+                    class="d-flex justify-content-between align-items-center mt-2"
+                  >
                     <h5 class="element-title text-uppercase fs-6 mt-3">
-                      <a href="single-product.html">Natural Glow</a>
+                      <a class="text-black" href="single-product.html"
+                        >Full Face</a
+                      >
                     </h5>
                     <a
                       href="#"
                       class="text-decoration-none"
                       data-after="Add to cart"
-                      ><span>$95.00</span></a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="product-item">
-                <div class="image-holder position-relative">
-                  <a href="single-product.html">
-                    <img
-                      src="images/product-item15.jpg"
-                      alt="categories"
-                      class="product-image img-fluid"
-                    />
-                  </a>
-                  <a href="wishlist.html" class="btn-icon btn-wishlist">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      class="svg-color"
-                    >
-                      <use xlink:href="#heart"></use>
-                    </svg>
-                  </a>
-                  <a href="wishlist.html" class="btn-icon btn-cart">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      class="svg-color"
-                    >
-                      <use xlink:href="#cart"></use>
-                    </svg>
-                  </a>
-                  <div class="product-content">
-                    <h5 class="element-title text-uppercase fs-6 mt-3">
-                      <a href="single-product.html">Natural Glow</a>
-                    </h5>
-                    <a
-                      href="#"
-                      class="text-decoration-none"
-                      data-after="Add to cart"
-                      ><span>$95.00</span></a
+                      ><span class="fs-5 fw-bolder">$20.00</span></a
                     >
                   </div>
                 </div>
@@ -799,9 +879,325 @@
         </div>
         <div class="icon-arrow no-outline icon-arrow-left bg-light"></div>
         <div class="icon-arrow no-outline icon-arrow-right bg-light"></div>
-        <div class="text-center mt-5">
-          <a href="shop-sidebar.html" class="btn-link">View All Products</a>
+      </div>
+    </section>
+    <section
+      id="new-arrival"
+      class="new-arrival product-carousel position-relative open-up"
+      data-aos="zoom-out"
+    >
+      <div class="container">
+        <div
+          class="d-flex flex-wrap justify-content-between align-items-center my-5 py-lg-5"
+        >
+          <div class="line-img my-2">
+            <img src="images/line.png" alt="" />
+          </div>
+          <h4 class="text-uppercase mb-0">WAXING</h4>
+          <div class="line-img my-2">
+            <img src="images/line.png" alt="" />
+          </div>
         </div>
+        <div class="swiper product-swiper overflow-hidden">
+          <div class="swiper-wrapper d-flex">
+            <div class="swiper-slide">
+              <div class="product-item position-relative overflow-hidden">
+                <div class="image-holder position-relative">
+                  <div class="position-relative">
+                    <img
+                      src="images/product-item5.jpg"
+                      alt="categories"
+                      class="product-image img-fluid"
+                    />
+                    <div
+                      class="position-absolute top-0 start-0 h-100 w-100 d-flex justify-content-center align-items-center bg-transparent hover-overlay"
+                    >
+                      <button
+                        class="py-2 rounded-1"
+                        style="
+                          background-color: #ffffff87;
+                          border: 2px #ffff solid;
+                        "
+                      >
+                        Book Now
+                      </button>
+                    </div>
+                  </div>
+
+                  <div
+                    class="d-flex justify-content-between align-items-center mt-2"
+                  >
+                    <h5 class="element-title text-uppercase fs-6 mt-3">
+                      <a class="text-black" href="single-product.html"
+                        >Under Arm</a
+                      >
+                    </h5>
+                    <a
+                      href="#"
+                      class="text-decoration-none"
+                      data-after="Add to cart"
+                      ><span class="fs-5 fw-bolder">$12.00</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-item position-relative overflow-hidden">
+                <div class="image-holder position-relative">
+                  <div class="position-relative">
+                    <img
+                      src="images/product-item5.jpg"
+                      alt="categories"
+                      class="product-image img-fluid"
+                    />
+                    <div
+                      class="position-absolute top-0 start-0 h-100 w-100 d-flex justify-content-center align-items-center bg-transparent hover-overlay"
+                    >
+                      <button
+                        class="py-2 rounded-1"
+                        style="
+                          background-color: #ffffff87;
+                          border: 2px #ffff solid;
+                        "
+                      >
+                        Book Now
+                      </button>
+                    </div>
+                  </div>
+
+                  <div
+                    class="d-flex justify-content-between align-items-center mt-2"
+                  >
+                    <h5 class="element-title text-uppercase fs-6 mt-3">
+                      <a class="text-black" href="single-product.html"
+                        >Half Arm</a
+                      >
+                    </h5>
+                    <a
+                      href="#"
+                      class="text-decoration-none"
+                      data-after="Add to cart"
+                      ><span class="fs-5 fw-bolder">$15.00</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-item position-relative overflow-hidden">
+                <div class="image-holder position-relative">
+                  <div class="position-relative">
+                    <img
+                      src="images/product-item5.jpg"
+                      alt="categories"
+                      class="product-image img-fluid"
+                    />
+                    <div
+                      class="position-absolute top-0 start-0 h-100 w-100 d-flex justify-content-center align-items-center bg-transparent hover-overlay"
+                    >
+                      <button
+                        class="py-2 rounded-1"
+                        style="
+                          background-color: #ffffff87;
+                          border: 2px #ffff solid;
+                        "
+                      >
+                        Book Now
+                      </button>
+                    </div>
+                  </div>
+
+                  <div
+                    class="d-flex justify-content-between align-items-center mt-2"
+                  >
+                    <h5 class="element-title text-uppercase fs-6 mt-3">
+                      <a class="text-black" href="single-product.html"
+                        >Full Arm</a
+                      >
+                    </h5>
+                    <a
+                      href="#"
+                      class="text-decoration-none"
+                      data-after="Add to cart"
+                      ><span class="fs-5 fw-bolder">$20.00</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-item position-relative overflow-hidden">
+                <div class="image-holder position-relative">
+                  <div class="position-relative">
+                    <img
+                      src="images/product-item5.jpg"
+                      alt="categories"
+                      class="product-image img-fluid"
+                    />
+                    <div
+                      class="position-absolute top-0 start-0 h-100 w-100 d-flex justify-content-center align-items-center bg-transparent hover-overlay"
+                    >
+                      <button
+                        class="py-2 rounded-1"
+                        style="
+                          background-color: #ffffff87;
+                          border: 2px #ffff solid;
+                        "
+                      >
+                        Book Now
+                      </button>
+                    </div>
+                  </div>
+
+                  <div
+                    class="d-flex justify-content-between align-items-center mt-2"
+                  >
+                    <h5 class="element-title text-uppercase fs-6 mt-3">
+                      <a class="text-black" href="single-product.html"
+                        >Half Leg</a
+                      >
+                    </h5>
+                    <a
+                      href="#"
+                      class="text-decoration-none"
+                      data-after="Add to cart"
+                      ><span class="fs-5 fw-bolder">$25.00</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-item position-relative overflow-hidden">
+                <div class="image-holder position-relative">
+                  <div class="position-relative">
+                    <img
+                      src="images/product-item5.jpg"
+                      alt="categories"
+                      class="product-image img-fluid"
+                    />
+                    <div
+                      class="position-absolute top-0 start-0 h-100 w-100 d-flex justify-content-center align-items-center bg-transparent hover-overlay"
+                    >
+                      <button
+                        class="py-2 rounded-1"
+                        style="
+                          background-color: #ffffff87;
+                          border: 2px #ffff solid;
+                        "
+                      >
+                        Book Now
+                      </button>
+                    </div>
+                  </div>
+
+                  <div
+                    class="d-flex justify-content-between align-items-center mt-2"
+                  >
+                    <h5 class="element-title text-uppercase fs-6 mt-3">
+                      <a class="text-black" href="single-product.html"
+                        >Full Leg</a
+                      >
+                    </h5>
+                    <a
+                      href="#"
+                      class="text-decoration-none"
+                      data-after="Add to cart"
+                      ><span class="fs-5 fw-bolder">$50.00</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-item position-relative overflow-hidden">
+                <div class="image-holder position-relative">
+                  <div class="position-relative">
+                    <img
+                      src="images/product-item5.jpg"
+                      alt="categories"
+                      class="product-image img-fluid"
+                    />
+                    <div
+                      class="position-absolute top-0 start-0 h-100 w-100 d-flex justify-content-center align-items-center bg-transparent hover-overlay"
+                    >
+                      <button
+                        class="py-2 rounded-1"
+                        style="
+                          background-color: #ffffff87;
+                          border: 2px #ffff solid;
+                        "
+                      >
+                        Book Now
+                      </button>
+                    </div>
+                  </div>
+
+                  <div
+                    class="d-flex justify-content-between align-items-center mt-2"
+                  >
+                    <h5 class="element-title text-uppercase fs-6 mt-3">
+                      <a class="text-black" href="single-product.html"
+                        >Bikini</a
+                      >
+                    </h5>
+                    <a
+                      href="#"
+                      class="text-decoration-none"
+                      data-after="Add to cart"
+                      ><span class="fs-5 fw-bolder">$20.00</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-item position-relative overflow-hidden">
+                <div class="image-holder position-relative">
+                  <div class="position-relative">
+                    <img
+                      src="images/product-item5.jpg"
+                      alt="categories"
+                      class="product-image img-fluid"
+                    />
+                    <div
+                      class="position-absolute top-0 start-0 h-100 w-100 d-flex justify-content-center align-items-center bg-transparent hover-overlay"
+                    >
+                      <button
+                        class="py-2 rounded-1"
+                        style="
+                          background-color: #ffffff87;
+                          border: 2px #ffff solid;
+                        "
+                      >
+                        Book Now
+                      </button>
+                    </div>
+                  </div>
+
+                  <div
+                    class="d-flex justify-content-between align-items-center mt-2"
+                  >
+                    <h5 class="element-title text-uppercase fs-6 mt-3">
+                      <a class="text-black" href="single-product.html"
+                        >Brazilian</a
+                      >
+                    </h5>
+                    <a
+                      href="#"
+                      class="text-decoration-none"
+                      data-after="Add to cart"
+                      ><span class="fs-5 fw-bolder">$35.00</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="icon-arrow no-outline icon-arrow-left bg-light"></div>
+        <div class="icon-arrow no-outline icon-arrow-right bg-light"></div>
       </div>
     </section>
 
@@ -1593,5 +1989,20 @@ END:VCARD`;
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+      const currentDate = new Date();
+
+      // Format the date (you can adjust the format as needed)
+      const options = {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      };
+      const formattedDate = currentDate.toLocaleDateString("en-US", options);
+
+      // Display the date in the HTML element
+      document.getElementById("currentDate").textContent = formattedDate;
+    </script>
   </body>
 </html>
