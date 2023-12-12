@@ -3,6 +3,7 @@ body {
   --heading-font-weight: 400;
   --heading-color: #2F2E33;
   --heading-line-height: 1.24;
+ 
 
   --swiper-theme-color: #8C907E;
 
@@ -42,6 +43,7 @@ body {
 body {
   letter-spacing: 0.03rem;
   background: #fff4f4;
+ 
 }
 
 h1,
@@ -1773,4 +1775,8 @@ span.accordion-title {
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+.open-up {
+  overflow: hidden;
+  max-width: 100%;
 }
