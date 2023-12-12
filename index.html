@@ -38,6 +38,7 @@
   <body class="homepage">
     <div class="preloader text-white fs-6 text-uppercase overflow-hidden"></div>
 
+
     <!-- contact nav bar -->
     <section class="py-2 text-black" style="background: #33323216">
       <div
@@ -56,6 +57,7 @@
         </div>
       </div>
     </section>
+
 
     <nav
       class="navbar container navbar-expand-lg text-uppercase fs-6 py-0 px-0 px-md-3 border-bottom align-items-center"
@@ -1399,8 +1401,9 @@
             <div class="image-holder">
               <a href="shop.html"
                 ><img
-                  src="images/service/img (10).jpg"
+                  src="images/service/img (12).jpg"
                   alt="categories"
+                  style="border-radius: 20px"
                   class="product-image img-fluid"
               /></a>
               <div
@@ -1414,11 +1417,11 @@
           </div>
         </div>
 
-        <a
+        <!-- <a
           href="data:text/vcard;charset=utf-8,%EF%BB%BFBEGIN%3AVCARD%0AVERSION%3A3.0%0AFN%3AJohn%20Doe%0ATEL%3A%2B123456789%0AEMAIL%3Ajohn.doe%40example.com%0AEND%3AVCARD%0A"
           download="JohnDoe.vcf"
           >Download vCard</a
-        >
+        > -->
         <div class="col-md-7 column-container collection-bg">
           <div class="collection-content mx-md-5 my-5">
             <h2 class="element-title text-uppercase display-4">
@@ -1434,7 +1437,7 @@
               libero.
             </p>
             <a href="#" class="btn btn-dark text-uppercase mt-3"
-              >Shop Collection</a
+              >Contact Expert</a
             >
           </div>
         </div>
@@ -1924,6 +1927,57 @@
     </script>
     <!-- end Google Calendar Appointment Scheduling -->
     <!-- end Google Calendar Appointment Scheduling -->
+    <script>
+      function generateVCard() {
+        const vCardString = `BEGIN:VCARD
+VERSION:3.0
+N;CHARSET=UTF-8:Jahan;Najma ;;mis ;
+FN:mis Najma  Jahan
+ORG:Blush & Glow Beuty Bar
+COMPANY:Blush & Glow Beuty Bar
+TITLE:skin care specialist
+
+ADR;CHARSET=UTF-8;TYPE=WORK:;;5 Massey Square East York ON M4C 5L6 canada;East York; ON M4C 5L6;;Canada
+TEL;TYPE=Work,pref:+16476072276
+TEL;CELL;TYPE=Mobile,VOICE:
+TEL;TYPE=WORK,VOICE:
+
+TEL;TYPE=Work,Fax:
+TEL;TYPE=Home,VOICE:
+TEL;TYPE=sms:
+URL;TYPE=Messenger:
+TEL;TYPE=SIGNAL:
+EMAIL;TYPE=Email:nazmajahan11@yahoo.ca 
+EMAIL;TYPE=WORK:nazmajahan11@yahoo.com
+URL;TYPE=Digital Business Card:
+
+
+URL;TYPE=Location:
+KEY:OPENPGP4FPR:
+UID:SMART vCARD-100884078
+URL;TYPE=Website:https://www.blushglow.ca
+URL;TYPE=Calendar:
+URL;TYPE=WhatsApp:
+
+
+URL;TYPE=Facebook:https://www.facebook.com/Blushglowbeautybar/
+
+PHOTO;ENCODING=b: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
+NOTE;CHARSET=UTF-8:
+
+END:VCARD`;
+  
+        // Create a Blob containing the vCard data
+        const blob = new Blob([vCardString], { type: 'text/vcard' });
+  
+        // Create a link element and trigger a click event to download the vCard
+        const link = document.createElement('a');
+        link.href = window.URL.createObjectURL(blob);
+        link.download = `${'name'}.vcf`;
+        link.click();
+      }
+    </script>
+  </head>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/plugins.js"></script>
