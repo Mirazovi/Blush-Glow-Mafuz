@@ -27,63 +27,95 @@
   </head>
   <body>
     <!-- Nav bar Section  -->
-    <nav
-      class="navbar navbar-expand-lg text-uppercase fs-6 py-0 px-0 px-md-3 border-bottom align-items-center"
-    >
-      <div class="container-fluid">
-        <div class="row justify-content-between align-items-center w-100 py-2">
-          <!-- logo  -->
-          <div class="col-auto">
-            <a class="navbar-brand" href="index.html">
-              <img height="50" src="images/logo/logo.png" alt="logo" />
-            </a>
-          </div>
-
-          <div class="col-auto">
+    <nav>
+      <section class="py-2 text-black" style="background: #33323216">
+        <div
+          class="py-1 px-1 text-center d-lg-flex justify-content-between align-items-center"
+          style="max-width: 1264px; margin: 0 auto"
+        >
+          <p
+            class="mb-0"
+            style="font-size: 15px; color: rgb(87, 87, 87)"
+            id="currentDate"
+          ></p>
+          <div
+            class="gap-3 align-items-center d-sm-flex justify-content-center text-center"
+          >
+            <p style="font-size: 15px; color: rgb(87, 87, 87)" class="mb-0">
+              Call: 09678-300400
+            </p>
+            <p style="font-size: 15px; color: rgb(87, 87, 87)" class="mb-0">
+              Email: example@gmail.com
+            </p>
             <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasNavbar"
-              aria-controls="offcanvasNavbar"
+              style="font-size: 15px; color: rgb(87, 87, 87)"
+              class="px-3 border-1 bg-transparent rounded-2 py-2"
             >
-              <span class="navbar-toggler-icon"></span>
+              Save Contact
             </button>
+          </div>
+        </div>
+      </section>
+      <section
+        class="navbar container navbar-expand-lg text-uppercase fs-6 py-0 px-0 border-bottom align-items-center"
+      >
+        <div class="container-fluid">
+          <div
+            class="row justify-content-between align-items-center w-100 py-2"
+          >
+            <!-- logo  -->
+            <div class="col-auto">
+              <a class="navbar-brand" href="index.html">
+                <img height="50" src="images/logo/logo.png" alt="logo" />
+              </a>
+            </div>
 
-            <div
-              class="offcanvas offcanvas-end"
-              tabindex="-1"
-              id="offcanvasNavbar"
-              aria-labelledby="offcanvasNavbarLabel"
-            >
-              <div class="offcanvas-body">
-                <ul
-                  class="navbar-nav justify-content-end flex-grow-1 gap-5 pe-3"
-                >
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link active"
-                      href="/"
-                      data-bs-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                      >Home</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="/contact.html" class="nav-link border px-3"
-                      >Contact</a
-                    >
-                  </li>
-                </ul>
+            <div class="col-auto">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div
+                class="offcanvas offcanvas-end"
+                tabindex="-1"
+                id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel"
+              >
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 gap-5">
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link"
+                        href="/"
+                        data-bs-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        href="/contact.html"
+                        class="nav-link active border px-3"
+                        >Contact</a
+                      >
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </nav>
 
     <section class="py-5">
@@ -158,36 +190,94 @@
                     <ul class="list-unstyled d-flex flex-wrap gap-3">
                       <li>
                         <a href="#" class="text-secondary">
-                          <svg width="24" height="24" viewBox="0 0 24 24">
-                            <use xlink:href="#facebook"></use>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="32"
+                            height="32"
+                            viewBox="0 0 256 256"
+                          >
+                            <path
+                              fill="#888888"
+                              d="M128 26a102 102 0 1 0 102 102A102.12 102.12 0 0 0 128 26m6 191.8V150h26a6 6 0 0 0 0-12h-26v-26a18 18 0 0 1 18-18h16a6 6 0 0 0 0-12h-16a30 30 0 0 0-30 30v26H96a6 6 0 0 0 0 12h26v67.8a90 90 0 1 1 12 0"
+                            />
                           </svg>
                         </a>
                       </li>
                       <li>
                         <a href="#" class="text-secondary">
-                          <svg width="24" height="24" viewBox="0 0 24 24">
-                            <use xlink:href="#twitter"></use>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="32"
+                            height="32"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              fill="#888888"
+                              fill-rule="evenodd"
+                              d="M15.022 3.343c.508-.087 1.077-.116 1.613-.025a4.85 4.85 0 0 1 2.54 1.273c.456.01.905-.08 1.302-.208a5.36 5.36 0 0 0 1.098-.501l.009-.006a.75.75 0 0 1 1.042 1.037c-.207.315-.496.877-.819 1.507l-.155.301c-.185.36-.375.724-.552 1.036c-.111.196-.23.395-.35.567v.274A12.34 12.34 0 0 1 8.287 21.03a12.32 12.32 0 0 1-6.694-1.97a.75.75 0 0 1 .5-1.375a7.471 7.471 0 0 0 4.033-.642a4.858 4.858 0 0 1-2.61-2.922a.75.75 0 0 1 .147-.722l.01-.01A4.848 4.848 0 0 1 2.05 9.793v-.052a.75.75 0 0 1 .553-.724A4.84 4.84 0 0 1 2.09 6.84a4.9 4.9 0 0 1 .65-2.442a.75.75 0 0 1 1.232-.1a10.89 10.89 0 0 0 7.006 3.93a4.85 4.85 0 0 1 2.562-4.406c.402-.214.934-.385 1.482-.479m-11.28 7.548a3.35 3.35 0 0 0 2.503 2.164a.75.75 0 0 1 .072 1.453c-.272.083-.551.14-.834.173a3.358 3.358 0 0 0 2.59 1.3a.75.75 0 0 1 .45 1.339a8.97 8.97 0 0 1-3.548 1.695a10.82 10.82 0 0 0 3.313.515h.009A10.838 10.838 0 0 0 19.25 8.607v-.535a.75.75 0 0 1 .186-.495c.07-.079.19-.261.36-.56c.16-.282.338-.622.523-.981l.033-.066a4.992 4.992 0 0 1-1.593.097a.75.75 0 0 1-.47-.237a3.35 3.35 0 0 0-1.904-1.032a3.42 3.42 0 0 0-1.11.025a3.605 3.605 0 0 0-1.028.323a3.35 3.35 0 0 0-1.678 3.74a.75.75 0 0 1-.767.925a12.39 12.39 0 0 1-8.149-3.627a3.41 3.41 0 0 0-.063.657v.002a3.34 3.34 0 0 0 1.486 2.785A.75.75 0 0 1 4.64 11a4.798 4.798 0 0 1-.897-.11"
+                              clip-rule="evenodd"
+                            />
                           </svg>
                         </a>
                       </li>
                       <li>
                         <a href="#" class="text-secondary">
-                          <svg width="24" height="24" viewBox="0 0 24 24">
-                            <use xlink:href="#youtube"></use>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="32"
+                            height="32"
+                            viewBox="0 0 24 24"
+                          >
+                            <g
+                              fill="none"
+                              stroke="#888888"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                            >
+                              <path
+                                d="M2 8a4 4 0 0 1 4-4h12a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"
+                              />
+                              <path d="m10 9l5 3l-5 3z" />
+                            </g>
                           </svg>
                         </a>
                       </li>
                       <li>
                         <a href="#" class="text-secondary">
-                          <svg width="24" height="24" viewBox="0 0 24 24">
-                            <use xlink:href="#pinterest"></use>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="32"
+                            height="32"
+                            viewBox="0 0 24 24"
+                          >
+                            <g
+                              fill="none"
+                              stroke="#888888"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="1.5"
+                            >
+                              <path
+                                d="M7.452 13.18c-1.108-2.262.4-6.668 5.472-5.948c5.587.794 4.581 9.478-.077 9.138c-1.474-.107-2.031-1.328-2.177-2.576m0 0c-.11-.946.017-1.907.16-2.41c.244-.857.649-.74.353.393c-.144.552-.32 1.245-.513 2.017m0 0c-.514 2.06-1.15 4.684-1.63 6.708"
+                              />
+                              <circle cx="12" cy="12" r="9" />
+                            </g>
                           </svg>
                         </a>
                       </li>
                       <li>
                         <a href="#" class="text-secondary">
-                          <svg width="24" height="24" viewBox="0 0 24 24">
-                            <use xlink:href="#instagram"></use>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="32"
+                            height="32"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              fill="#888888"
+                              d="M11.95 1h.1c1.827 0 3.266 0 4.42.105c1.178.106 2.156.328 3.03.833A7 7 0 0 1 22.062 4.5c.505.874.727 1.852.833 3.03C23 8.684 23 10.123 23 11.95v.1c0 1.827 0 3.266-.105 4.42c-.106 1.178-.328 2.156-.833 3.03a7.001 7.001 0 0 1-2.562 2.562c-.874.505-1.852.727-3.03.833c-1.154.105-2.593.105-4.42.105h-.1c-1.827 0-3.266 0-4.42-.105c-1.178-.106-2.156-.328-3.03-.833A7 7 0 0 1 1.938 19.5c-.505-.874-.727-1.852-.833-3.03C1 15.316 1 13.877 1 12.05v-.1c0-1.827 0-3.266.105-4.42c.106-1.178.328-2.156.833-3.03A7 7 0 0 1 4.5 1.938c.874-.505 1.852-.727 3.03-.833C8.684 1 10.123 1 11.95 1M7.71 3.096c-1.039.095-1.691.274-2.21.574A5 5 0 0 0 3.67 5.5c-.3.519-.48 1.171-.574 2.21C3.001 8.764 3 10.112 3 12s.001 3.236.096 4.29c.095 1.039.274 1.691.574 2.21a5 5 0 0 0 1.83 1.83c.519.3 1.171.48 2.21.574c1.054.095 2.402.096 4.29.096s3.236-.001 4.29-.096c1.039-.095 1.691-.274 2.21-.574a5 5 0 0 0 1.83-1.83c.3-.519.48-1.171.574-2.21c.095-1.053.096-2.402.096-4.29s-.001-3.236-.096-4.29c-.095-1.039-.274-1.691-.574-2.21a5 5 0 0 0-1.83-1.83c-.519-.3-1.171-.48-2.21-.574C15.237 3.001 13.888 3 12 3s-3.236.001-4.29.096m9.04 3.156c0-.552.45-1.002 1.002-1.002s1.002.45 1.002 1.002s-.45 1.002-1.002 1.002s-1.002-.45-1.002-1.002M12 8.5a3.5 3.5 0 1 0 0 7a3.5 3.5 0 0 0 0-7M6.5 12a5.5 5.5 0 1 1 11 0a5.5 5.5 0 0 1-11 0"
+                            />
                           </svg>
                         </a>
                       </li>
@@ -564,5 +654,20 @@
         </div>
       </div>
     </footer>
+    <script>
+      const currentDate = new Date();
+
+      // Format the date (you can adjust the format as needed)
+      const options = {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      };
+      const formattedDate = currentDate.toLocaleDateString("en-US", options);
+
+      // Display the date in the HTML element
+      document.getElementById("currentDate").textContent = formattedDate;
+    </script>
   </body>
 </html>

@@ -1796,6 +1796,10 @@ span.accordion-title {
 .product-item:hover .product-image {
   filter: blur(4px);
 }
+.product-image{
+  /* height: 300px;
+  object-fit: cover; */
+}
 
 .product-item:hover .element-title a {
   color: #fff; /* Change text color on hover */
