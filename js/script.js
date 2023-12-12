@@ -241,7 +241,7 @@
   };
 
   var searchPopup = function () {
-    // open search box
+    // open search
     $(".navbar").on("click", ".search-button", function (e) {
       $(".search-popup").toggleClass("is-visible");
     });
