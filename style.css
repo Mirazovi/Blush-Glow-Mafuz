@@ -1803,9 +1803,40 @@ span.accordion-title {
 
 .product-item:hover .element-title a {
   color: #fff; /* Change text color on hover */
+}
 
 .open-up {
   overflow: hidden;
   max-width: 100%;
 
+}
+#logo-top{
+  width: 400px;
+}
+@media (max-width: 768px) {
+  #logo-top{
+    width: 300px;
+  }
+}
+@media (max-width: 468px) {
+  #logo-top{
+    width: 250px;
+  }
+}
+@media (max-width: 418px) {
+  #logo-top{
+    width: 210px;
+  }
+}
+.footer-menu-002{
+  top: 20px;
+  position: relative;
+}
+.footer-menu-003{
+  top: 20px;
+  position: relative;
+}
+.footer-menu-004{
+  top: 20px;
+  position: relative;
 }

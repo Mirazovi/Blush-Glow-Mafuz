@@ -53,15 +53,23 @@
           <div
             class="gap-3 align-items-center d-sm-flex justify-content-center text-center"
           >
-
-            <a href="tel:+16476072276" style="font-size: 15px; color: rgb(87, 87, 87)" class="mb-0">Call: +16476072276</a>
-            <a href="mailto:blushglowbar@gmail.com" style="font-size: 15px; color: rgb(87, 87, 87)" class="mb-0">Email: blushglowbar@gmail.com</a>
+            <a
+              href="tel:+16476072276"
+              style="font-size: 15px; color: rgb(87, 87, 87)"
+              class="mb-0"
+              >Call: +16476072276</a
+            >
+            <a
+              href="mailto:blushglowbar@gmail.com"
+              style="font-size: 15px; color: rgb(87, 87, 87)"
+              class="mb-0"
+              >Email: blushglowbar@gmail.com</a
+            >
             <button
               onclick="generateVCard()"
               style="font-size: 15px; color: rgb(87, 87, 87)"
               class="px-3 border-1 bg-transparent rounded-2 py-2"
             >
-
               Save Contact
             </button>
           </div>
@@ -77,7 +85,7 @@
             <!-- logo  -->
             <div class="col-auto">
               <a class="navbar-brand" href="index.html">
-                <img height="50" src="images/logo/logo.png" alt="logo" />
+                <img id="logo-top" src="images/logo/logo.png" alt="logo" />
               </a>
             </div>
 
@@ -367,18 +375,32 @@
                     <div
                       class="position-absolute top-0 start-0 h-100 w-100 d-flex justify-content-center align-items-center bg-transparent hover-overlay"
                     >
-                    <a
-                    class="p-2 rounded-1 d-flex align-items-center gap-1"
-                    style="
-                      background-color: #ffffff87;
-                      border: 2px #ffff solid;
-                    "
-                    href="https://www.facebook.com/Blushglowbeautybar/services"
-                    target="_blank"
-                  >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 256 256"><path fill="#1877F2" d="M256 128C256 57.308 198.692 0 128 0C57.308 0 0 57.308 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.348-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.959 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445"/><path fill="#FFF" d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A128.959 128.959 0 0 0 128 256a128.9 128.9 0 0 0 20-1.555V165z"/></svg>
-                    <span style="margin-bottom: -5px;">Book Now</span>
-                  </a>
+                      <a
+                        class="p-2 rounded-1 d-flex align-items-center gap-1"
+                        style="
+                          background-color: #ffffff87;
+                          border: 2px #ffff solid;
+                        "
+                        href="https://www.facebook.com/Blushglowbeautybar/services"
+                        target="_blank"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="25"
+                          height="25"
+                          viewBox="0 0 256 256"
+                        >
+                          <path
+                            fill="#1877F2"
+                            d="M256 128C256 57.308 198.692 0 128 0C57.308 0 0 57.308 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.348-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.959 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445"
+                          />
+                          <path
+                            fill="#FFF"
+                            d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A128.959 128.959 0 0 0 128 256a128.9 128.9 0 0 0 20-1.555V165z"
+                          />
+                        </svg>
+                        <span style="margin-bottom: -5px">Book Now</span>
+                      </a>
                     </div>
                   </div>
 
@@ -412,18 +434,32 @@
                     <div
                       class="position-absolute top-0 start-0 h-100 w-100 d-flex justify-content-center align-items-center bg-transparent hover-overlay"
                     >
-                    <a
-                    class="p-2 rounded-1 d-flex align-items-center gap-1"
-                    style="
-                      background-color: #ffffff87;
-                      border: 2px #ffff solid;
-                    "
-                    href="https://www.facebook.com/Blushglowbeautybar/services"
-                    target="_blank"
-                  >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 256 256"><path fill="#1877F2" d="M256 128C256 57.308 198.692 0 128 0C57.308 0 0 57.308 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.348-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.959 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445"/><path fill="#FFF" d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A128.959 128.959 0 0 0 128 256a128.9 128.9 0 0 0 20-1.555V165z"/></svg>
-                    <span style="margin-bottom: -5px;">Book Now</span>
-                  </a>
+                      <a
+                        class="p-2 rounded-1 d-flex align-items-center gap-1"
+                        style="
+                          background-color: #ffffff87;
+                          border: 2px #ffff solid;
+                        "
+                        href="https://www.facebook.com/Blushglowbeautybar/services"
+                        target="_blank"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="25"
+                          height="25"
+                          viewBox="0 0 256 256"
+                        >
+                          <path
+                            fill="#1877F2"
+                            d="M256 128C256 57.308 198.692 0 128 0C57.308 0 0 57.308 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.348-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.959 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445"
+                          />
+                          <path
+                            fill="#FFF"
+                            d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A128.959 128.959 0 0 0 128 256a128.9 128.9 0 0 0 20-1.555V165z"
+                          />
+                        </svg>
+                        <span style="margin-bottom: -5px">Book Now</span>
+                      </a>
                     </div>
                   </div>
 
@@ -457,18 +493,32 @@
                     <div
                       class="position-absolute top-0 start-0 h-100 w-100 d-flex justify-content-center align-items-center bg-transparent hover-overlay"
                     >
-                    <a
-                    class="p-2 rounded-1 d-flex align-items-center gap-1"
-                    style="
-                      background-color: #ffffff87;
-                      border: 2px #ffff solid;
-                    "
-                    href="https://www.facebook.com/Blushglowbeautybar/services"
-                    target="_blank"
-                  >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 256 256"><path fill="#1877F2" d="M256 128C256 57.308 198.692 0 128 0C57.308 0 0 57.308 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.348-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.959 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445"/><path fill="#FFF" d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A128.959 128.959 0 0 0 128 256a128.9 128.9 0 0 0 20-1.555V165z"/></svg>
-                    <span style="margin-bottom: -5px;">Book Now</span>
-                  </a>
+                      <a
+                        class="p-2 rounded-1 d-flex align-items-center gap-1"
+                        style="
+                          background-color: #ffffff87;
+                          border: 2px #ffff solid;
+                        "
+                        href="https://www.facebook.com/Blushglowbeautybar/services"
+                        target="_blank"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="25"
+                          height="25"
+                          viewBox="0 0 256 256"
+                        >
+                          <path
+                            fill="#1877F2"
+                            d="M256 128C256 57.308 198.692 0 128 0C57.308 0 0 57.308 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.348-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.959 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445"
+                          />
+                          <path
+                            fill="#FFF"
+                            d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A128.959 128.959 0 0 0 128 256a128.9 128.9 0 0 0 20-1.555V165z"
+                          />
+                        </svg>
+                        <span style="margin-bottom: -5px">Book Now</span>
+                      </a>
                     </div>
                   </div>
 
@@ -502,18 +552,32 @@
                     <div
                       class="position-absolute top-0 start-0 h-100 w-100 d-flex justify-content-center align-items-center bg-transparent hover-overlay"
                     >
-                    <a
-                    class="p-2 rounded-1 d-flex align-items-center gap-1"
-                    style="
-                      background-color: #ffffff87;
-                      border: 2px #ffff solid;
-                    "
-                    href="https://www.facebook.com/Blushglowbeautybar/services"
-                    target="_blank"
-                  >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 256 256"><path fill="#1877F2" d="M256 128C256 57.308 198.692 0 128 0C57.308 0 0 57.308 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.348-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.959 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445"/><path fill="#FFF" d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A128.959 128.959 0 0 0 128 256a128.9 128.9 0 0 0 20-1.555V165z"/></svg>
-                    <span style="margin-bottom: -5px;">Book Now</span>
-                  </a>
+                      <a
+                        class="p-2 rounded-1 d-flex align-items-center gap-1"
+                        style="
+                          background-color: #ffffff87;
+                          border: 2px #ffff solid;
+                        "
+                        href="https://www.facebook.com/Blushglowbeautybar/services"
+                        target="_blank"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="25"
+                          height="25"
+                          viewBox="0 0 256 256"
+                        >
+                          <path
+                            fill="#1877F2"
+                            d="M256 128C256 57.308 198.692 0 128 0C57.308 0 0 57.308 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.348-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.959 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445"
+                          />
+                          <path
+                            fill="#FFF"
+                            d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A128.959 128.959 0 0 0 128 256a128.9 128.9 0 0 0 20-1.555V165z"
+                          />
+                        </svg>
+                        <span style="margin-bottom: -5px">Book Now</span>
+                      </a>
                     </div>
                   </div>
 
@@ -547,18 +611,32 @@
                     <div
                       class="position-absolute top-0 start-0 h-100 w-100 d-flex justify-content-center align-items-center bg-transparent hover-overlay"
                     >
-                    <a
-                    class="p-2 rounded-1 d-flex align-items-center gap-1"
-                    style="
-                      background-color: #ffffff87;
-                      border: 2px #ffff solid;
-                    "
-                    href="https://www.facebook.com/Blushglowbeautybar/services"
-                    target="_blank"
-                  >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 256 256"><path fill="#1877F2" d="M256 128C256 57.308 198.692 0 128 0C57.308 0 0 57.308 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.348-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.959 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445"/><path fill="#FFF" d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A128.959 128.959 0 0 0 128 256a128.9 128.9 0 0 0 20-1.555V165z"/></svg>
-                    <span style="margin-bottom: -5px;">Book Now</span>
-                  </a>
+                      <a
+                        class="p-2 rounded-1 d-flex align-items-center gap-1"
+                        style="
+                          background-color: #ffffff87;
+                          border: 2px #ffff solid;
+                        "
+                        href="https://www.facebook.com/Blushglowbeautybar/services"
+                        target="_blank"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="25"
+                          height="25"
+                          viewBox="0 0 256 256"
+                        >
+                          <path
+                            fill="#1877F2"
+                            d="M256 128C256 57.308 198.692 0 128 0C57.308 0 0 57.308 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.348-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.959 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445"
+                          />
+                          <path
+                            fill="#FFF"
+                            d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A128.959 128.959 0 0 0 128 256a128.9 128.9 0 0 0 20-1.555V165z"
+                          />
+                        </svg>
+                        <span style="margin-bottom: -5px">Book Now</span>
+                      </a>
                     </div>
                   </div>
 
@@ -592,18 +670,32 @@
                     <div
                       class="position-absolute top-0 start-0 h-100 w-100 d-flex justify-content-center align-items-center bg-transparent hover-overlay"
                     >
-                    <a
-                    class="p-2 rounded-1 d-flex align-items-center gap-1"
-                    style="
-                      background-color: #ffffff87;
-                      border: 2px #ffff solid;
-                    "
-                    href="https://www.facebook.com/Blushglowbeautybar/services"
-                    target="_blank"
-                  >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 256 256"><path fill="#1877F2" d="M256 128C256 57.308 198.692 0 128 0C57.308 0 0 57.308 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.348-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.959 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445"/><path fill="#FFF" d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A128.959 128.959 0 0 0 128 256a128.9 128.9 0 0 0 20-1.555V165z"/></svg>
-                    <span style="margin-bottom: -5px;">Book Now</span>
-                  </a>
+                      <a
+                        class="p-2 rounded-1 d-flex align-items-center gap-1"
+                        style="
+                          background-color: #ffffff87;
+                          border: 2px #ffff solid;
+                        "
+                        href="https://www.facebook.com/Blushglowbeautybar/services"
+                        target="_blank"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="25"
+                          height="25"
+                          viewBox="0 0 256 256"
+                        >
+                          <path
+                            fill="#1877F2"
+                            d="M256 128C256 57.308 198.692 0 128 0C57.308 0 0 57.308 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.348-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.959 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445"
+                          />
+                          <path
+                            fill="#FFF"
+                            d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A128.959 128.959 0 0 0 128 256a128.9 128.9 0 0 0 20-1.555V165z"
+                          />
+                        </svg>
+                        <span style="margin-bottom: -5px">Book Now</span>
+                      </a>
                     </div>
                   </div>
 
@@ -637,18 +729,32 @@
                     <div
                       class="position-absolute top-0 start-0 h-100 w-100 d-flex justify-content-center align-items-center bg-transparent hover-overlay"
                     >
-                    <a
-                    class="p-2 rounded-1 d-flex align-items-center gap-1"
-                    style="
-                      background-color: #ffffff87;
-                      border: 2px #ffff solid;
-                    "
-                    href="https://www.facebook.com/Blushglowbeautybar/services"
-                    target="_blank"
-                  >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 256 256"><path fill="#1877F2" d="M256 128C256 57.308 198.692 0 128 0C57.308 0 0 57.308 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.348-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.959 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445"/><path fill="#FFF" d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A128.959 128.959 0 0 0 128 256a128.9 128.9 0 0 0 20-1.555V165z"/></svg>
-                    <span style="margin-bottom: -5px;">Book Now</span>
-                  </a>
+                      <a
+                        class="p-2 rounded-1 d-flex align-items-center gap-1"
+                        style="
+                          background-color: #ffffff87;
+                          border: 2px #ffff solid;
+                        "
+                        href="https://www.facebook.com/Blushglowbeautybar/services"
+                        target="_blank"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="25"
+                          height="25"
+                          viewBox="0 0 256 256"
+                        >
+                          <path
+                            fill="#1877F2"
+                            d="M256 128C256 57.308 198.692 0 128 0C57.308 0 0 57.308 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.348-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.959 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445"
+                          />
+                          <path
+                            fill="#FFF"
+                            d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A128.959 128.959 0 0 0 128 256a128.9 128.9 0 0 0 20-1.555V165z"
+                          />
+                        </svg>
+                        <span style="margin-bottom: -5px">Book Now</span>
+                      </a>
                     </div>
                   </div>
 
@@ -682,18 +788,32 @@
                     <div
                       class="position-absolute top-0 start-0 h-100 w-100 d-flex justify-content-center align-items-center bg-transparent hover-overlay"
                     >
-                    <a
-                    class="p-2 rounded-1 d-flex align-items-center gap-1"
-                    style="
-                      background-color: #ffffff87;
-                      border: 2px #ffff solid;
-                    "
-                    href="https://www.facebook.com/Blushglowbeautybar/services"
-                    target="_blank"
-                  >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 256 256"><path fill="#1877F2" d="M256 128C256 57.308 198.692 0 128 0C57.308 0 0 57.308 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.348-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.959 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445"/><path fill="#FFF" d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A128.959 128.959 0 0 0 128 256a128.9 128.9 0 0 0 20-1.555V165z"/></svg>
-                    <span style="margin-bottom: -5px;">Book Now</span>
-                  </a>
+                      <a
+                        class="p-2 rounded-1 d-flex align-items-center gap-1"
+                        style="
+                          background-color: #ffffff87;
+                          border: 2px #ffff solid;
+                        "
+                        href="https://www.facebook.com/Blushglowbeautybar/services"
+                        target="_blank"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="25"
+                          height="25"
+                          viewBox="0 0 256 256"
+                        >
+                          <path
+                            fill="#1877F2"
+                            d="M256 128C256 57.308 198.692 0 128 0C57.308 0 0 57.308 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.348-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.959 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445"
+                          />
+                          <path
+                            fill="#FFF"
+                            d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A128.959 128.959 0 0 0 128 256a128.9 128.9 0 0 0 20-1.555V165z"
+                          />
+                        </svg>
+                        <span style="margin-bottom: -5px">Book Now</span>
+                      </a>
                     </div>
                   </div>
 
@@ -727,18 +847,32 @@
                     <div
                       class="position-absolute top-0 start-0 h-100 w-100 d-flex justify-content-center align-items-center bg-transparent hover-overlay"
                     >
-                    <a
-                    class="p-2 rounded-1 d-flex align-items-center gap-1"
-                    style="
-                      background-color: #ffffff87;
-                      border: 2px #ffff solid;
-                    "
-                    href="https://www.facebook.com/Blushglowbeautybar/services"
-                    target="_blank"
-                  >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 256 256"><path fill="#1877F2" d="M256 128C256 57.308 198.692 0 128 0C57.308 0 0 57.308 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.348-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.959 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445"/><path fill="#FFF" d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A128.959 128.959 0 0 0 128 256a128.9 128.9 0 0 0 20-1.555V165z"/></svg>
-                    <span style="margin-bottom: -5px;">Book Now</span>
-                  </a>
+                      <a
+                        class="p-2 rounded-1 d-flex align-items-center gap-1"
+                        style="
+                          background-color: #ffffff87;
+                          border: 2px #ffff solid;
+                        "
+                        href="https://www.facebook.com/Blushglowbeautybar/services"
+                        target="_blank"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="25"
+                          height="25"
+                          viewBox="0 0 256 256"
+                        >
+                          <path
+                            fill="#1877F2"
+                            d="M256 128C256 57.308 198.692 0 128 0C57.308 0 0 57.308 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.348-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.959 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445"
+                          />
+                          <path
+                            fill="#FFF"
+                            d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A128.959 128.959 0 0 0 128 256a128.9 128.9 0 0 0 20-1.555V165z"
+                          />
+                        </svg>
+                        <span style="margin-bottom: -5px">Book Now</span>
+                      </a>
                     </div>
                   </div>
 
@@ -797,18 +931,32 @@
                     <div
                       class="position-absolute top-0 start-0 h-100 w-100 d-flex justify-content-center align-items-center bg-transparent hover-overlay"
                     >
-                    <a
-                    class="p-2 rounded-1 d-flex align-items-center gap-1"
-                    style="
-                      background-color: #ffffff87;
-                      border: 2px #ffff solid;
-                    "
-                    href="https://www.facebook.com/Blushglowbeautybar/services"
-                    target="_blank"
-                  >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 256 256"><path fill="#1877F2" d="M256 128C256 57.308 198.692 0 128 0C57.308 0 0 57.308 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.348-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.959 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445"/><path fill="#FFF" d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A128.959 128.959 0 0 0 128 256a128.9 128.9 0 0 0 20-1.555V165z"/></svg>
-                    <span style="margin-bottom: -5px;">Book Now</span>
-                  </a>
+                      <a
+                        class="p-2 rounded-1 d-flex align-items-center gap-1"
+                        style="
+                          background-color: #ffffff87;
+                          border: 2px #ffff solid;
+                        "
+                        href="https://www.facebook.com/Blushglowbeautybar/services"
+                        target="_blank"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="25"
+                          height="25"
+                          viewBox="0 0 256 256"
+                        >
+                          <path
+                            fill="#1877F2"
+                            d="M256 128C256 57.308 198.692 0 128 0C57.308 0 0 57.308 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.348-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.959 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445"
+                          />
+                          <path
+                            fill="#FFF"
+                            d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A128.959 128.959 0 0 0 128 256a128.9 128.9 0 0 0 20-1.555V165z"
+                          />
+                        </svg>
+                        <span style="margin-bottom: -5px">Book Now</span>
+                      </a>
                     </div>
                   </div>
 
@@ -842,18 +990,32 @@
                     <div
                       class="position-absolute top-0 start-0 h-100 w-100 d-flex justify-content-center align-items-center bg-transparent hover-overlay"
                     >
-                    <a
-                    class="p-2 rounded-1 d-flex align-items-center gap-1"
-                    style="
-                      background-color: #ffffff87;
-                      border: 2px #ffff solid;
-                    "
-                    href="https://www.facebook.com/Blushglowbeautybar/services"
-                    target="_blank"
-                  >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 256 256"><path fill="#1877F2" d="M256 128C256 57.308 198.692 0 128 0C57.308 0 0 57.308 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.348-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.959 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445"/><path fill="#FFF" d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A128.959 128.959 0 0 0 128 256a128.9 128.9 0 0 0 20-1.555V165z"/></svg>
-                    <span style="margin-bottom: -5px;">Book Now</span>
-                  </a>
+                      <a
+                        class="p-2 rounded-1 d-flex align-items-center gap-1"
+                        style="
+                          background-color: #ffffff87;
+                          border: 2px #ffff solid;
+                        "
+                        href="https://www.facebook.com/Blushglowbeautybar/services"
+                        target="_blank"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="25"
+                          height="25"
+                          viewBox="0 0 256 256"
+                        >
+                          <path
+                            fill="#1877F2"
+                            d="M256 128C256 57.308 198.692 0 128 0C57.308 0 0 57.308 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.348-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.959 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445"
+                          />
+                          <path
+                            fill="#FFF"
+                            d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A128.959 128.959 0 0 0 128 256a128.9 128.9 0 0 0 20-1.555V165z"
+                          />
+                        </svg>
+                        <span style="margin-bottom: -5px">Book Now</span>
+                      </a>
                     </div>
                   </div>
 
@@ -887,18 +1049,32 @@
                     <div
                       class="position-absolute top-0 start-0 h-100 w-100 d-flex justify-content-center align-items-center bg-transparent hover-overlay"
                     >
-                    <a
-                    class="p-2 rounded-1 d-flex align-items-center gap-1"
-                    style="
-                      background-color: #ffffff87;
-                      border: 2px #ffff solid;
-                    "
-                    href="https://www.facebook.com/Blushglowbeautybar/services"
-                    target="_blank"
-                  >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 256 256"><path fill="#1877F2" d="M256 128C256 57.308 198.692 0 128 0C57.308 0 0 57.308 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.348-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.959 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445"/><path fill="#FFF" d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A128.959 128.959 0 0 0 128 256a128.9 128.9 0 0 0 20-1.555V165z"/></svg>
-                    <span style="margin-bottom: -5px;">Book Now</span>
-                  </a>
+                      <a
+                        class="p-2 rounded-1 d-flex align-items-center gap-1"
+                        style="
+                          background-color: #ffffff87;
+                          border: 2px #ffff solid;
+                        "
+                        href="https://www.facebook.com/Blushglowbeautybar/services"
+                        target="_blank"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="25"
+                          height="25"
+                          viewBox="0 0 256 256"
+                        >
+                          <path
+                            fill="#1877F2"
+                            d="M256 128C256 57.308 198.692 0 128 0C57.308 0 0 57.308 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.348-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.959 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445"
+                          />
+                          <path
+                            fill="#FFF"
+                            d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A128.959 128.959 0 0 0 128 256a128.9 128.9 0 0 0 20-1.555V165z"
+                          />
+                        </svg>
+                        <span style="margin-bottom: -5px">Book Now</span>
+                      </a>
                     </div>
                   </div>
 
@@ -957,18 +1133,32 @@
                     <div
                       class="position-absolute top-0 start-0 h-100 w-100 d-flex justify-content-center align-items-center bg-transparent hover-overlay"
                     >
-                    <a
-                    class="p-2 rounded-1 d-flex align-items-center gap-1"
-                    style="
-                      background-color: #ffffff87;
-                      border: 2px #ffff solid;
-                    "
-                    href="https://www.facebook.com/Blushglowbeautybar/services"
-                    target="_blank"
-                  >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 256 256"><path fill="#1877F2" d="M256 128C256 57.308 198.692 0 128 0C57.308 0 0 57.308 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.348-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.959 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445"/><path fill="#FFF" d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A128.959 128.959 0 0 0 128 256a128.9 128.9 0 0 0 20-1.555V165z"/></svg>
-                    <span style="margin-bottom: -5px;">Book Now</span>
-                  </a>
+                      <a
+                        class="p-2 rounded-1 d-flex align-items-center gap-1"
+                        style="
+                          background-color: #ffffff87;
+                          border: 2px #ffff solid;
+                        "
+                        href="https://www.facebook.com/Blushglowbeautybar/services"
+                        target="_blank"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="25"
+                          height="25"
+                          viewBox="0 0 256 256"
+                        >
+                          <path
+                            fill="#1877F2"
+                            d="M256 128C256 57.308 198.692 0 128 0C57.308 0 0 57.308 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.348-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.959 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445"
+                          />
+                          <path
+                            fill="#FFF"
+                            d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A128.959 128.959 0 0 0 128 256a128.9 128.9 0 0 0 20-1.555V165z"
+                          />
+                        </svg>
+                        <span style="margin-bottom: -5px">Book Now</span>
+                      </a>
                     </div>
                   </div>
 
@@ -1002,18 +1192,32 @@
                     <div
                       class="position-absolute top-0 start-0 h-100 w-100 d-flex justify-content-center align-items-center bg-transparent hover-overlay"
                     >
-                    <a
-                    class="p-2 rounded-1 d-flex align-items-center gap-1"
-                    style="
-                      background-color: #ffffff87;
-                      border: 2px #ffff solid;
-                    "
-                    href="https://www.facebook.com/Blushglowbeautybar/services"
-                    target="_blank"
-                  >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 256 256"><path fill="#1877F2" d="M256 128C256 57.308 198.692 0 128 0C57.308 0 0 57.308 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.348-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.959 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445"/><path fill="#FFF" d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A128.959 128.959 0 0 0 128 256a128.9 128.9 0 0 0 20-1.555V165z"/></svg>
-                    <span style="margin-bottom: -5px;">Book Now</span>
-                  </a>
+                      <a
+                        class="p-2 rounded-1 d-flex align-items-center gap-1"
+                        style="
+                          background-color: #ffffff87;
+                          border: 2px #ffff solid;
+                        "
+                        href="https://www.facebook.com/Blushglowbeautybar/services"
+                        target="_blank"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="25"
+                          height="25"
+                          viewBox="0 0 256 256"
+                        >
+                          <path
+                            fill="#1877F2"
+                            d="M256 128C256 57.308 198.692 0 128 0C57.308 0 0 57.308 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.348-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.959 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445"
+                          />
+                          <path
+                            fill="#FFF"
+                            d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A128.959 128.959 0 0 0 128 256a128.9 128.9 0 0 0 20-1.555V165z"
+                          />
+                        </svg>
+                        <span style="margin-bottom: -5px">Book Now</span>
+                      </a>
                     </div>
                   </div>
 
@@ -1047,18 +1251,32 @@
                     <div
                       class="position-absolute top-0 start-0 h-100 w-100 d-flex justify-content-center align-items-center bg-transparent hover-overlay"
                     >
-                    <a
-                    class="p-2 rounded-1 d-flex align-items-center gap-1"
-                    style="
-                      background-color: #ffffff87;
-                      border: 2px #ffff solid;
-                    "
-                    href="https://www.facebook.com/Blushglowbeautybar/services"
-                    target="_blank"
-                  >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 256 256"><path fill="#1877F2" d="M256 128C256 57.308 198.692 0 128 0C57.308 0 0 57.308 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.348-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.959 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445"/><path fill="#FFF" d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A128.959 128.959 0 0 0 128 256a128.9 128.9 0 0 0 20-1.555V165z"/></svg>
-                    <span style="margin-bottom: -5px;">Book Now</span>
-                  </a>
+                      <a
+                        class="p-2 rounded-1 d-flex align-items-center gap-1"
+                        style="
+                          background-color: #ffffff87;
+                          border: 2px #ffff solid;
+                        "
+                        href="https://www.facebook.com/Blushglowbeautybar/services"
+                        target="_blank"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="25"
+                          height="25"
+                          viewBox="0 0 256 256"
+                        >
+                          <path
+                            fill="#1877F2"
+                            d="M256 128C256 57.308 198.692 0 128 0C57.308 0 0 57.308 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.348-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.959 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445"
+                          />
+                          <path
+                            fill="#FFF"
+                            d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A128.959 128.959 0 0 0 128 256a128.9 128.9 0 0 0 20-1.555V165z"
+                          />
+                        </svg>
+                        <span style="margin-bottom: -5px">Book Now</span>
+                      </a>
                     </div>
                   </div>
 
@@ -1092,7 +1310,7 @@
                     <div
                       class="position-absolute top-0 start-0 h-100 w-100 d-flex justify-content-center align-items-center bg-transparent hover-overlay"
                     >
-                    <a
+                      <a
                         class="p-2 rounded-1 d-flex align-items-center gap-1"
                         style="
                           background-color: #ffffff87;
@@ -1101,8 +1319,22 @@
                         href="https://www.facebook.com/Blushglowbeautybar/services"
                         target="_blank"
                       >
-                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 256 256"><path fill="#1877F2" d="M256 128C256 57.308 198.692 0 128 0C57.308 0 0 57.308 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.348-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.959 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445"/><path fill="#FFF" d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A128.959 128.959 0 0 0 128 256a128.9 128.9 0 0 0 20-1.555V165z"/></svg>
-                        <span style="margin-bottom: -5px;">Book Now</span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="25"
+                          height="25"
+                          viewBox="0 0 256 256"
+                        >
+                          <path
+                            fill="#1877F2"
+                            d="M256 128C256 57.308 198.692 0 128 0C57.308 0 0 57.308 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.348-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.959 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445"
+                          />
+                          <path
+                            fill="#FFF"
+                            d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A128.959 128.959 0 0 0 128 256a128.9 128.9 0 0 0 20-1.555V165z"
+                          />
+                        </svg>
+                        <span style="margin-bottom: -5px">Book Now</span>
                       </a>
                     </div>
                   </div>
@@ -1137,18 +1369,32 @@
                     <div
                       class="position-absolute top-0 start-0 h-100 w-100 d-flex justify-content-center align-items-center bg-transparent hover-overlay"
                     >
-                    <a
-                    class="p-2 rounded-1 d-flex align-items-center gap-1"
-                    style="
-                      background-color: #ffffff87;
-                      border: 2px #ffff solid;
-                    "
-                    href="https://www.facebook.com/Blushglowbeautybar/services"
-                    target="_blank"
-                  >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 256 256"><path fill="#1877F2" d="M256 128C256 57.308 198.692 0 128 0C57.308 0 0 57.308 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.348-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.959 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445"/><path fill="#FFF" d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A128.959 128.959 0 0 0 128 256a128.9 128.9 0 0 0 20-1.555V165z"/></svg>
-                    <span style="margin-bottom: -5px;">Book Now</span>
-                  </a>
+                      <a
+                        class="p-2 rounded-1 d-flex align-items-center gap-1"
+                        style="
+                          background-color: #ffffff87;
+                          border: 2px #ffff solid;
+                        "
+                        href="https://www.facebook.com/Blushglowbeautybar/services"
+                        target="_blank"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="25"
+                          height="25"
+                          viewBox="0 0 256 256"
+                        >
+                          <path
+                            fill="#1877F2"
+                            d="M256 128C256 57.308 198.692 0 128 0C57.308 0 0 57.308 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.348-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.959 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445"
+                          />
+                          <path
+                            fill="#FFF"
+                            d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A128.959 128.959 0 0 0 128 256a128.9 128.9 0 0 0 20-1.555V165z"
+                          />
+                        </svg>
+                        <span style="margin-bottom: -5px">Book Now</span>
+                      </a>
                     </div>
                   </div>
 
@@ -1182,18 +1428,32 @@
                     <div
                       class="position-absolute top-0 start-0 h-100 w-100 d-flex justify-content-center align-items-center bg-transparent hover-overlay"
                     >
-                    <a
-                    class="p-2 rounded-1 d-flex align-items-center gap-1"
-                    style="
-                      background-color: #ffffff87;
-                      border: 2px #ffff solid;
-                    "
-                    href="https://www.facebook.com/Blushglowbeautybar/services"
-                    target="_blank"
-                  >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 256 256"><path fill="#1877F2" d="M256 128C256 57.308 198.692 0 128 0C57.308 0 0 57.308 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.348-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.959 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445"/><path fill="#FFF" d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A128.959 128.959 0 0 0 128 256a128.9 128.9 0 0 0 20-1.555V165z"/></svg>
-                    <span style="margin-bottom: -5px;">Book Now</span>
-                  </a>
+                      <a
+                        class="p-2 rounded-1 d-flex align-items-center gap-1"
+                        style="
+                          background-color: #ffffff87;
+                          border: 2px #ffff solid;
+                        "
+                        href="https://www.facebook.com/Blushglowbeautybar/services"
+                        target="_blank"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="25"
+                          height="25"
+                          viewBox="0 0 256 256"
+                        >
+                          <path
+                            fill="#1877F2"
+                            d="M256 128C256 57.308 198.692 0 128 0C57.308 0 0 57.308 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.348-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.959 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445"
+                          />
+                          <path
+                            fill="#FFF"
+                            d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A128.959 128.959 0 0 0 128 256a128.9 128.9 0 0 0 20-1.555V165z"
+                          />
+                        </svg>
+                        <span style="margin-bottom: -5px">Book Now</span>
+                      </a>
                     </div>
                   </div>
 
@@ -1236,8 +1496,22 @@
                         href="https://www.facebook.com/Blushglowbeautybar/services"
                         target="_blank"
                       >
-                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 256 256"><path fill="#1877F2" d="M256 128C256 57.308 198.692 0 128 0C57.308 0 0 57.308 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.348-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.959 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445"/><path fill="#FFF" d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A128.959 128.959 0 0 0 128 256a128.9 128.9 0 0 0 20-1.555V165z"/></svg>
-                        <span style="margin-bottom: -5px;">Book Now</span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="25"
+                          height="25"
+                          viewBox="0 0 256 256"
+                        >
+                          <path
+                            fill="#1877F2"
+                            d="M256 128C256 57.308 198.692 0 128 0C57.308 0 0 57.308 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.348-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.959 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445"
+                          />
+                          <path
+                            fill="#FFF"
+                            d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A128.959 128.959 0 0 0 128 256a128.9 128.9 0 0 0 20-1.555V165z"
+                          />
+                        </svg>
+                        <span style="margin-bottom: -5px">Book Now</span>
                       </a>
                     </div>
                   </div>
@@ -1287,18 +1561,32 @@
                 </h2>
                 <div class="btn-left btn-swiper">
                   <a
-                  class="p-2 rounded-1 d-flex align-items-center gap-1"
-                  style="
-                  width: fit-content;
-                    background-color: #ffffff87;
-                    border: 2px #ffff solid;
-                  "
-                  href="https://www.facebook.com/Blushglowbeautybar/services"
-                  target="_blank"
-                >
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 256 256"><path fill="#1877F2" d="M256 128C256 57.308 198.692 0 128 0C57.308 0 0 57.308 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.348-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.959 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445"/><path fill="#FFF" d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A128.959 128.959 0 0 0 128 256a128.9 128.9 0 0 0 20-1.555V165z"/></svg>
-                  <span style="margin-bottom: -5px;">Book Now</span>
-                </a>
+                    class="p-2 rounded-1 d-flex align-items-center gap-1"
+                    style="
+                      width: fit-content;
+                      background-color: #ffffff87;
+                      border: 2px #ffff solid;
+                    "
+                    href="https://www.facebook.com/Blushglowbeautybar/services"
+                    target="_blank"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="25"
+                      viewBox="0 0 256 256"
+                    >
+                      <path
+                        fill="#1877F2"
+                        d="M256 128C256 57.308 198.692 0 128 0C57.308 0 0 57.308 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.348-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.959 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445"
+                      />
+                      <path
+                        fill="#FFF"
+                        d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A128.959 128.959 0 0 0 128 256a128.9 128.9 0 0 0 20-1.555V165z"
+                      />
+                    </svg>
+                    <span style="margin-bottom: -5px">Book Now</span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -1319,18 +1607,32 @@
                 </h4>
                 <div class="btn-left btn-swiper mt-3">
                   <a
-                        class="p-2 rounded-1 d-flex align-items-center gap-1"
-                        style="
-                        width: fit-content;
-                          background-color: #ffffff87;
-                          border: 2px #ffff solid;
-                        "
-                        href="https://www.facebook.com/Blushglowbeautybar/services"
-                        target="_blank"
-                      >
-                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 256 256"><path fill="#1877F2" d="M256 128C256 57.308 198.692 0 128 0C57.308 0 0 57.308 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.348-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.959 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445"/><path fill="#FFF" d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A128.959 128.959 0 0 0 128 256a128.9 128.9 0 0 0 20-1.555V165z"/></svg>
-                        <span style="margin-bottom: -5px;">Book Now</span>
-                      </a>
+                    class="p-2 rounded-1 d-flex align-items-center gap-1"
+                    style="
+                      width: fit-content;
+                      background-color: #ffffff87;
+                      border: 2px #ffff solid;
+                    "
+                    href="https://www.facebook.com/Blushglowbeautybar/services"
+                    target="_blank"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="25"
+                      viewBox="0 0 256 256"
+                    >
+                      <path
+                        fill="#1877F2"
+                        d="M256 128C256 57.308 198.692 0 128 0C57.308 0 0 57.308 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.348-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.959 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445"
+                      />
+                      <path
+                        fill="#FFF"
+                        d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A128.959 128.959 0 0 0 128 256a128.9 128.9 0 0 0 20-1.555V165z"
+                      />
+                    </svg>
+                    <span style="margin-bottom: -5px">Book Now</span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -1352,18 +1654,32 @@
                   <h4 class="section-title text-white display-6">Eye Brow</h4>
                   <div class="btn-left btn-swiper mt-3">
                     <a
-                        class="p-2 rounded-1 d-flex align-items-center gap-1"
-                        style="
+                      class="p-2 rounded-1 d-flex align-items-center gap-1"
+                      style="
                         width: fit-content;
-                          background-color: #ffffff87;
-                          border: 2px #ffff solid;
-                        "
-                        href="https://www.facebook.com/Blushglowbeautybar/services"
-                        target="_blank"
+                        background-color: #ffffff87;
+                        border: 2px #ffff solid;
+                      "
+                      href="https://www.facebook.com/Blushglowbeautybar/services"
+                      target="_blank"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        viewBox="0 0 256 256"
                       >
-                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 256 256"><path fill="#1877F2" d="M256 128C256 57.308 198.692 0 128 0C57.308 0 0 57.308 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.348-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.959 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445"/><path fill="#FFF" d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A128.959 128.959 0 0 0 128 256a128.9 128.9 0 0 0 20-1.555V165z"/></svg>
-                        <span style="margin-bottom: -5px;">Book Now</span>
-                      </a>
+                        <path
+                          fill="#1877F2"
+                          d="M256 128C256 57.308 198.692 0 128 0C57.308 0 0 57.308 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.348-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.959 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445"
+                        />
+                        <path
+                          fill="#FFF"
+                          d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A128.959 128.959 0 0 0 128 256a128.9 128.9 0 0 0 20-1.555V165z"
+                        />
+                      </svg>
+                      <span style="margin-bottom: -5px">Book Now</span>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -1386,18 +1702,32 @@
                   </h4>
                   <div class="btn-left btn-swiper mt-3">
                     <a
-                        class="p-2 rounded-1 d-flex align-items-center gap-1 "
-                        style="
-                          width: fit-content;
-                          background-color: #ffffff87;
-                          border: 2px #ffff solid;
-                        "
-                        href="https://www.facebook.com/Blushglowbeautybar/services"
-                        target="_blank"
+                      class="p-2 rounded-1 d-flex align-items-center gap-1"
+                      style="
+                        width: fit-content;
+                        background-color: #ffffff87;
+                        border: 2px #ffff solid;
+                      "
+                      href="https://www.facebook.com/Blushglowbeautybar/services"
+                      target="_blank"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        viewBox="0 0 256 256"
                       >
-                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 256 256"><path fill="#1877F2" d="M256 128C256 57.308 198.692 0 128 0C57.308 0 0 57.308 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.348-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.959 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445"/><path fill="#FFF" d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A128.959 128.959 0 0 0 128 256a128.9 128.9 0 0 0 20-1.555V165z"/></svg>
-                        <span style="margin-bottom: -5px;">Book Now</span>
-                      </a>
+                        <path
+                          fill="#1877F2"
+                          d="M256 128C256 57.308 198.692 0 128 0C57.308 0 0 57.308 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.348-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.959 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445"
+                        />
+                        <path
+                          fill="#FFF"
+                          d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A128.959 128.959 0 0 0 128 256a128.9 128.9 0 0 0 20-1.555V165z"
+                        />
+                      </svg>
+                      <span style="margin-bottom: -5px">Book Now</span>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -1741,7 +2071,7 @@
             <div class="footer-menu footer-menu-001">
               <div class="footer-intro mb-4">
                 <a href="index.html">
-                  <img src="images/main-logo.png" alt="logo" />
+                  <img width="200" src="images/logo/logo-sq.png" alt="logo" />
                 </a>
               </div>
               <p>
@@ -1749,70 +2079,6 @@
                 fringilla elementum diam in. Nisi, purus vitae, ultrices nunc.
                 Sit ac sit suscipit hendrerit.
               </p>
-              <div class="social-links">
-                <ul class="list-unstyled d-flex flex-wrap gap-4">
-                  <li>
-                    <a href="#" class="">
-                      <svg
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        class="svg-color"
-                      >
-                        <use xlink:href="#facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="">
-                      <svg
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        class="svg-color"
-                      >
-                        <use xlink:href="#twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="">
-                      <svg
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        class="svg-color"
-                      >
-                        <use xlink:href="#youtube"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="">
-                      <svg
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        class="svg-color"
-                      >
-                        <use xlink:href="#pinterest"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="">
-                      <svg
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        class="svg-color"
-                      >
-                        <use xlink:href="#instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
             </div>
           </div>
           <div class="col-md-2 col-sm-6">
@@ -1825,16 +2091,11 @@
                   <a href="index.html" class="item-anchor">Home</a>
                 </li>
                 <li class="menu-item mb-2">
-                  <a href="shop.html" class="item-anchor">About</a>
+                  <a href="./about.html" class="item-anchor">About</a>
                 </li>
+
                 <li class="menu-item mb-2">
-                  <a href="blog.html" class="item-anchor">Services</a>
-                </li>
-                <li class="menu-item mb-2">
-                  <a href="styles.html" class="item-anchor">Single item</a>
-                </li>
-                <li class="menu-item mb-2">
-                  <a href="#" class="item-anchor">Contact</a>
+                  <a href="./contact.html" class="item-anchor">Contact</a>
                 </li>
               </ul>
             </div>
@@ -1865,14 +2126,14 @@
               <h5 class="widget-title text-uppercase mb-4">Contact Us</h5>
               <p>
                 Do you have any questions or suggestions?
-                <a href="mailto:contact@yourcompany.com" class="item-anchor"
-                  >contact@yourcompany.com</a
+                <a href="mailto:blushglowbar@gmail.com" class="item-anchor"
+                  >blushglowbar@gmail.com</a
                 >
               </p>
               <p>
                 Do you need support? Give us a call.
-                <a href="tel:+43 720 11 52 78" class="item-anchor"
-                  >+43 720 11 52 78</a
+                <a href="tel:tel:+16476072276" class="item-anchor"
+                  >+16 476 072 276</a
                 >
               </p>
             </div>
