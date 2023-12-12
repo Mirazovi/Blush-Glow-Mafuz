@@ -48,6 +48,7 @@
               Email: example@gmail.com
             </p>
             <button
+              onclick="generateVCard()"
               style="font-size: 15px; color: rgb(87, 87, 87)"
               class="px-3 border-1 bg-transparent rounded-2 py-2"
             >
@@ -149,15 +150,23 @@
                     Head Office
                   </h5>
                   <div class="contact-address">
-                    <p>730 Glenstone Ave 65802, Springfield, US</p>
+                    <a
+                      href="https://maps.app.goo.gl/KbdzyatGNNNW7mVx8"
+                      target="_blank"
+                    >
+                      5 Massey Square, East York, ON M4C 5L6, canada
+                    </a>
                   </div>
+                  <br />
                   <div class="contact-number">
-                    <a href="#">+123 987 321 ,</a>
-                    <a href="#">+123 123 654</a>
+                    <a href="tel:+16476072276">+1 64 760 722 76</a>
                   </div>
+                  <br />
                   <div class="email-address">
                     <p>
-                      <a href="#">Care@templatesjungle.com</a>
+                      <a href="mailto:blushglowbar@gmail.com"
+                        >blushglowbar@gmail.com</a
+                      >
                     </p>
                   </div>
                 </div>
@@ -612,14 +621,14 @@
               <h5 class="widget-title text-uppercase mb-4">Contact Us</h5>
               <p>
                 Do you have any questions or suggestions?
-                <a href="mailto:contact@yourcompany.com" class="item-anchor"
-                  >contact@yourcompany.com</a
+                <a href="mailto:blushglowbar@gmail.com" class="item-anchor"
+                  >blushglowbar@gmail.com</a
                 >
               </p>
               <p>
                 Do you need support? Give us a call.
-                <a href="tel:+43 720 11 52 78" class="item-anchor"
-                  >+43 720 11 52 78</a
+                <a href="tel:+16476072276" class="item-anchor"
+                  >+1 64 760 722 76</a
                 >
               </p>
             </div>
@@ -654,6 +663,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/vcard.js"></script>
     <script>
       const currentDate = new Date();
 
