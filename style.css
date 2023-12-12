@@ -1762,3 +1762,16 @@ span.accordion-title {
 .post-meta {
   font-size: 12px;
 }
+
+.nahid-grid{
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.nahidgg{
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
