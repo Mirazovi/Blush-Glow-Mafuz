@@ -44,10 +44,7 @@ body {
   --bs-nav-link-font-size: 15px;
 }
 
-body {
-  letter-spacing: 0.03rem;
-  background: #fff4f4;
-}
+
 
 h1,
 .h1,
@@ -810,7 +807,7 @@ a {
 /** Swiper Slide Arrows 2
 --------------------------------------------------------------*/
 .icon-arrow.no-outline {
-  top: 50%;
+  top: 60%;
   font-size: 1.7em;
   color: var(--grey-color);
   border: none;
@@ -1804,8 +1801,20 @@ span.accordion-title {
 
 
 /* mafuz style  */
+body {
+  letter-spacing: 0.03rem;
+  background: #fff4f4;
+}
+
+main{
+  max-width: 1800px;
+  margin: auto;
+}
+
 .hoverEffectMafuz{
   overflow: hidden;
+  height: 400px;
+  object-fit: cover !important
 }
 .hoverEffectMafuz img{
   transition: all 1s ease-in-out;
@@ -1820,4 +1829,83 @@ span.accordion-title {
 }
 .buttonHoverEffect:hover{
   background-color: #ffffff7a;
+}
+
+
+/* scroll down style  */
+
+::-webkit-scrollbar{
+  width: 8px;
+  background-color: rgba(128, 128, 128, 0.221);
+}
+::-webkit-scrollbar-thumb{
+  background-color: #D49696;
+  border-radius: 10px;
+}
+
+.certicateItem img{
+  transition: transform 1s ease-in-out;
+  border-radius: 8px;
+}
+.certicateItem:hover img{
+  transform: scale(1.1);
+}
+.titleHoverEffect{
+  font-size: 25px;
+  color: white;
+  background-color: black;
+  z-index: 999 !important;
+  transform: translateX(-100%);
+  transition: transform 1s ease-in-out;
+}
+.certicateItem:hover .titleHoverEffect{
+  transform: translateX(0px);
+}
+
+
+/* gellary section  */
+.gellery-img-container{
+  /* display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 10px; */
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.gellery-img-container div{
+  max-width: 30%;
+  flex: 1 1 auto;
+
+}
+.gellery-img-container div img{
+  border-radius: 6px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+@media screen and (max-width: 576px) {
+  .smallText{
+    font-size: 20px;
+  }
+  .vedioSize{
+    height: 400px !important
+  }
+}
+
+@media (min-width: 768px) {
+
+  .smallText{
+    font-size: 30px;
+  }
+  .vedioSize{
+    height: 600px !important
+  }
+}
+@media (min-width: 1000px) {
+  .smallText{
+    font-size: 40px;
+  }
 }
