@@ -1,6 +1,7 @@
 const BaseApiUrl = `https://admin.blushglow.ca`;
 const BaseCongener = document.querySelector("#service-cont");
-
+const ReviewHome = document.querySelector("#ReviewHome");
+const ReviewMain = document.querySelector("#ReviewMain");
 function groupByCategory(arr, categoryProperty) {
   return arr.reduce((grouped, obj) => {
     const category = obj[categoryProperty];
@@ -165,8 +166,233 @@ const LoadData = async () => {
   }
 };
 
+const LoadReviewData = async () => {
+  try {
+    var requestOptions = {
+      method: "GET",
+      redirect: "follow",
+    };
+
+    const reviewData = await fetch(
+      "https://admin.blushglow.ca/api/reviews?populate=*",
+      requestOptions
+    );
+
+    const { data } = await reviewData.json();
+
+    const modifiedData = data.map((data) => {
+      console.log("single", data);
+      return {
+        username: data?.attributes?.username,
+        photourl: data?.attributes?.photourl,
+        rating: data?.attributes?.rating,
+        review: data?.attributes?.review,
+        url: data?.attributes?.url,
+      };
+    });
+
+    const HomeReview = modifiedData
+      .slice(0, 6)
+      .map((value) => {
+        // Determine color based on rating value
+
+        let rating = [1, 2, 3, 4, 5];
+
+        return `<div  class="col-md-6 col-sm-12 col-lg-4">
+        <div style="min-height: 300px;"  class="border position-relative p-4 rounded-3 shadow-sm">
+          <div class="d-flex gap-2 align-items-center">
+            <img
+              style="width: 70px; height: 70px; border-radius: 100%"
+              src=${value.photourl}
+              alt="img"
+            />
+            <div>
+              <h1 class="mb-1 fw-bold fs-4">${value.username}</h1>
+              <div class="d-flex gap-1" style="width: 100px">
+
+              ${rating
+                .map((rating) => {
+                  return `<svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#FFD700"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  data-slot="icon"
+                  class="w- h-"
+                  5
+                  w-100
+                  100
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"
+                  />
+                </svg>`;
+                })
+                .join(" ")}
+              </div>
+            </div>
+          </div>
+          <p class="mt-4" style="text-align: justify;">
+            ${value.review.slice(0, 200)}....
+          </p>
+          <div
+              class="position-absolute"
+              style="
+                width: 100%;
+                height: 100px;
+                background-image: linear-gradient(
+                  0deg,
+                  #fff4f4 60%,
+                  transparent
+                );
+                left: 0;
+                bottom: 0.1px;
+              "
+            >
+              <div
+                class="d-flex w-100 h-100 justify-content-center align-items-center"
+              >
+                <button
+                  style="
+                    font-size: 18px;
+                    color: rgb(87, 87, 87);
+                    margin-bottom: -20px;
+                  "
+                  class="px-3 border-1 bg-transparent rounded-2 py-1"
+                >
+                  <a target="_blank" href=${value.url}> See more </a>
+                </button>
+              </div>
+            </div>
+        </div>
+      </div>`;
+      })
+      .join(" ");
+
+    ReviewHome.innerHTML = HomeReview;
+  } catch (err) {
+    console.log(err);
+  }
+};
+
+const LoadMainReviewData = async () => {
+  try {
+    var requestOptions = {
+      method: "GET",
+      redirect: "follow",
+    };
+
+    const reviewData = await fetch(
+      "https://admin.blushglow.ca/api/reviews?populate=*",
+      requestOptions
+    );
+
+    const { data } = await reviewData.json();
+
+    const modifiedData = data.map((data) => {
+      console.log("single", data);
+      return {
+        username: data?.attributes?.username,
+        photourl: data?.attributes?.photourl,
+        rating: data?.attributes?.rating,
+        review: data?.attributes?.review,
+        url: data?.attributes?.url,
+      };
+    });
+
+    const HomeReview = modifiedData
+      .map((value) => {
+        // Determine color based on rating value
+
+        let rating = [1, 2, 3, 4, 5];
+
+        return `<div  class="col-md-6 col-sm-12 col-lg-4">
+        <div style="min-height: 300px;"  class="border position-relative p-4 rounded-3 shadow-sm">
+          <div class="d-flex gap-2 align-items-center">
+            <img
+              style="width: 70px; height: 70px; border-radius: 100%"
+              src=${value.photourl}
+              alt="img"
+            />
+            <div>
+              <h1 class="mb-1 fw-bold fs-4">${value.username}</h1>
+              <div class="d-flex gap-1" style="width: 100px">
+
+              ${rating
+                .map((rating, i) => {
+                  return `<svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="${i + 1 <= value.rating ? "#FFD700" : "black"}"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  data-slot="icon"
+                  class="w- h-"
+                  5
+                  w-100
+                  100
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"
+                  />
+                </svg>`;
+                })
+                .join(" ")}
+              </div>
+            </div>
+          </div>
+          <p class="mt-4" style="text-align: justify;">
+            ${value.review.slice(0, 200)}....
+          </p>
+          <div
+              class="position-absolute"
+              style="
+                width: 100%;
+                height: 100px;
+                background-image: linear-gradient(
+                  0deg,
+                  #fff4f4 60%,
+                  transparent
+                );
+                left: 0;
+                bottom: 0.1px;
+              "
+            >
+              <div
+                class="d-flex w-100 h-100 justify-content-center align-items-center"
+              >
+                <button
+                  style="
+                    font-size: 18px;
+                    color: rgb(87, 87, 87);
+                    margin-bottom: -20px;
+                  "
+                  class="px-3 border-1 bg-transparent rounded-2 py-1"
+                >
+                  <a target="_blank" href=${value.url}> See more </a>
+                </button>
+              </div>
+            </div>
+        </div>
+      </div>`;
+      })
+      .join(" ");
+
+    ReviewMain.innerHTML = HomeReview;
+  } catch (err) {
+    console.log(err);
+  }
+};
+
 (function () {
   window.addEventListener("load", () => {
+    LoadMainReviewData();
+    LoadReviewData();
     LoadData();
   });
 })();
