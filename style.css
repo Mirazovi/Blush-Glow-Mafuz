@@ -42,6 +42,10 @@ body {
   --bs-link-hover-color-rgb: 17, 17, 17;
 
   --bs-nav-link-font-size: 15px;
+
+  background-color: #fff4f4 !important;
+  background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png") !important;
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 
@@ -1884,6 +1888,64 @@ main{
   display: block;
 }
 
+#link-nahid-hover{
+  transition: all 0.3s linear;
+}
+
+#link-nahid-hover svg {
+  transition: all 0.3s linear;
+  color: #262626;
+}
+
+
+#link-nahid-hover[data-facebook] svg{
+ fill: #282828;
+}
+#link-nahid-hover[data-facebook]:hover svg{
+ fill: rgb(38, 107, 255);
+}
+
+#link-nahid-hover[data-instagram] svg{
+ fill: #282828;
+}
+
+#link-nahid-hover[data-instagram]:hover svg{
+ fill: #e2279e;
+}
+
+#link-nahid-hover[data-youtube] svg{
+ fill: #282828;
+}
+#link-nahid-hover[data-youtube] svg{
+  position: relative;
+  transform: translateY(-4px);
+}
+
+#link-nahid-hover[data-youtube]:hover svg{
+ fill: red;
+}
+
+footer{
+  position: relative;
+}
+
+#footer-bg{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+#footer-bg img{
+  width: 600px;
+  position: relative;
+  z-index: -1;
+  opacity: .5;
+  transform:  translateX(-100px);
+}
 
 
 @media screen and (max-width: 576px) {
