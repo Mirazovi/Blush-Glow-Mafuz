@@ -51,15 +51,55 @@ const LoadData = async () => {
       <div>
       <div class="container">
         <div
-          class="d-flex flex-wrap justify-content-center justify-content-xxl-between align-items-center my-3 my-lg-5"
+          class="d-flex flex-wrap justify-content-center justify-content-between align-items-center my-3 my-lg-5"
         >
-          <div class="line-img my-2">
-            <img data-src="images/line.png" class="lazy-load" alt="" />
+          <div>
+          <svg
+            version="1.1"
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 706.373 39.706"
+            style="enable-background: new 0 0 706.373 39.706"
+            xml:space="preserve"
+          >
+            <g style="opacity: 0.5">
+              <path
+                style="fill: #b87760"
+                d="M22.458,2.145c168.915,8.823,339.219,12.563,508.304,14.913
+           c56.478,0.688,112.956,1.133,169.435,0.805c0.828-0.005,1.504,0.663,1.509,1.491c0.005,0.835-0.674,1.514-1.509,1.509
+           c-112.967-0.53-225.925,1.348-338.87,3.77c-83.216,1.842-170.926,4.456-254.152,7.888c-28.239,1.235-56.478,2.444-84.717,4.06
+           c-9.509,0.544-17.659-6.723-18.203-16.232C3.604,10.145,12.264,1.503,22.458,2.145L22.458,2.145z"
+              />
+            </g>
+          </svg>
           </div>
-          <h4 class="text-uppercase mb-0 fw-bolder">${key}</h4>
-          <div class="line-img my-2">
-            <img data-src="images/line.png" class="lazy-load" alt="" />
-          </div>
+          <h4 style="color:  #b87760;" class="text-uppercase mb-0 fw-bolder">${key}</h4>
+         <div>
+         <svg
+         version="1.1"
+         id="Layer_2"
+         xmlns="http://www.w3.org/2000/svg"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         x="0px"
+         y="0px"
+         viewBox="0 0 706.373 39.706"
+         style="enable-background: new 0 0 706.373 39.706"
+         xml:space="preserve"
+       >
+         <g style="opacity: 0.5">
+           <path
+             style="fill: #b87760"
+             d="M22.458,2.145c168.915,8.823,339.219,12.563,508.304,14.913
+        c56.478,0.688,112.956,1.133,169.435,0.805c0.828-0.005,1.504,0.663,1.509,1.491c0.005,0.835-0.674,1.514-1.509,1.509
+        c-112.967-0.53-225.925,1.348-338.87,3.77c-83.216,1.842-170.926,4.456-254.152,7.888c-28.239,1.235-56.478,2.444-84.717,4.06
+        c-9.509,0.544-17.659-6.723-18.203-16.232C3.604,10.145,12.264,1.503,22.458,2.145L22.458,2.145z"
+           />
+         </g>
+       </svg>
+         </div>
         </div>
       </div>
       <div class="row">

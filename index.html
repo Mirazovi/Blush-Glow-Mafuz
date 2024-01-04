@@ -39,12 +39,28 @@
     <style>
       .loader {
         position: relative;
-        width: 2.5em;
-        height: 2.5em;
-        transform: rotate(165deg);
+        width: 350px;
+        height: auto;
+        /* transform: rotate(165deg); */
+      }
+      .loader img {
+        width: 100%;
+        height: 100%;
+        animation: moveingloader 1s ease-in;
       }
 
-      .loader:before,
+      @keyframes moveingloader {
+        0% {
+          transform: scale(0);
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      /* .loader:before,
       .loader:after {
         content: "";
         position: absolute;
@@ -119,13 +135,15 @@
         position: absolute;
         top: calc(50% - 1.25em);
         left: calc(50% - 1.25em);
-      }
+      } */
     </style>
   </head>
 
   <body class="homepage">
     <div class="preloader text-white fs-6 text-uppercase overflow-hidden">
-      <div class="loader"></div>
+      <div class="loader">
+        <img src="/images/logo/logo.png" alt="logo" />
+      </div>
     </div>
     <!-- scroll effect  -->
     <!-- toDo  -->
@@ -366,7 +384,7 @@
                       style="background-color: #d49696; width: fit-content"
                     >
                       <div
-                        class="position-absolute w-100 h-100"
+                        class="position-absolute w-100 h-100 step-1"
                         style="
                           bottom: -48px;
                           left: 0;
@@ -423,7 +441,7 @@
             >
               <div
                 style="height: fit-content"
-                class="border position-relative mb-5 p-3 rounded-2 shadow-sm"
+                class="border position-relative mb-5 p-3 rounded-2 shadow-sm stepContainer"
               >
                 <svg
                   width="38"
@@ -453,18 +471,15 @@
                   </a>
                 </p>
                 <!-- step 02 -->
-                <div
-                  class="position-absolute w-100"
-                  style="bottom: -60px; left: 0"
-                >
+                <div class="position-absolute w-100 step">
                   <div class="d-flex justify-content-center">
                     <div
                       class="px-3 py-1 position-relative rounded-1"
                       style="background-color: #d49696; width: fit-content"
                     >
                       <div
-                        class="position-absolute w-100 h-100"
-                        style="top: -48px; left: 0"
+                        class="position-absolute w-100 h-100 stepArrow"
+                        style=""
                       >
                         <svg
                           class="w-100 h-100"
@@ -550,7 +565,7 @@
                       style="background-color: #d49696; width: fit-content"
                     >
                       <div
-                        class="position-absolute w-100 h-100"
+                        class="position-absolute w-100 h-100 step-1"
                         style="
                           bottom: -48px;
                           left: 0;
@@ -607,7 +622,7 @@
             >
               <div
                 style="height: fit-content"
-                class="border position-relative mb-5 p-3 rounded-2 shadow-sm"
+                class="border position-relative mb-5 p-3 rounded-2 shadow-sm stepContainer"
               >
                 <svg
                   width="38"
@@ -635,19 +650,13 @@
                   >
                 </p>
                 <!-- step 04  -->
-                <div
-                  class="position-absolute w-100"
-                  style="bottom: -60px; left: 0"
-                >
+                <div class="position-absolute w-100 step">
                   <div class="d-flex justify-content-center">
                     <div
                       class="px-3 py-1 position-relative rounded-1"
                       style="background-color: #d49696; width: fit-content"
                     >
-                      <div
-                        class="position-absolute w-100 h-100"
-                        style="top: -48px; left: 0"
-                      >
+                      <div class="position-absolute w-100 h-100 stepArrow">
                         <svg
                           class="w-100 h-100"
                           version="1.1"
@@ -710,7 +719,7 @@
                     data-src="images/service/img (12).jpg"
                     alt="categories"
                     style="border-radius: 20px"
-                    class="product-image img-fluid lazy-load"
+                    class="img-fluid lazy-load"
                 /></a>
                 <div
                   class="collection-content position-absolute p-5 text-uppercase"
@@ -737,13 +746,18 @@
                 professional treatment with expert
               </h2>
               <p>
-                Dignissim lacus, turpis ut suspendisse vel tellus. Turpis purus,
-                gravida orci, fringilla a. Ac sed eu fringilla odio mi.
-                Consequat pharetra at magna imperdiet cursus ac faucibus sit
-                libero. Ultricies quam nunc, lorem sit lorem urna, pretium
-                aliquam ut. In vel, quis donec dolor id in. Pulvinar commodo
-                mollis diam sed facilisis at cursus imperdiet cursus ac faucibus
-                sit faucibus sit libero.
+                Embark on a journey of indulgence with professional treatment
+                featuring expert care that transcends ordinary pampering.
+                Elevate your wellness experience as skilled professionals tailor
+                each session to meet your unique needs. Immerse yourself in a
+                sanctuary of rejuvenation, where expertise meets luxury. From
+                advanced skincare to precision techniques, our professionals
+                bring a wealth of knowledge to every treatment, ensuring a
+                transformative and personalized experience. Discover the epitome
+                of relaxation and beauty with our professional treatment—a
+                symphony of skill, innovation, and indulgence. Your path to
+                radiance starts here. Welcome to unparalleled excellence in
+                care.
               </p>
               <a href="./contact.html" class="btn btn-dark text-uppercase mt-3"
                 >Contact Expert</a
@@ -756,9 +770,9 @@
       <!-- video section  -->
       <section data-aos="fade-up" class="container mt-5">
         <iframe
-          class="w-100 rounded-5 vedioSize"
-          height="600px"
-          src="https://www.youtube.com/embed/eBtXfR0Sw0U?si=j4hqyb_YXNIvhGHy"
+          style="width: 100%; border-radius: 20px"
+          height="600"
+          src="https://www.youtube.com/embed/3pjl4cacA3M?si=NCHuCIpa0STU6FNB"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -775,14 +789,56 @@
         >
           <div class="container">
             <div
-              class="d-flex flex-wrap justify-content-between align-items-center my-5 py-lg-5"
+              class="d-flex flex-wrap justify-content-center justify-content-between align-items-center my-3 my-lg-5"
             >
-              <div class="line-img my-2">
-                <img data-src="images/line.png" class="lazy-load" alt="" />
+              <div>
+                <svg
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 706.373 39.706"
+                  style="enable-background: new 0 0 706.373 39.706"
+                  xml:space="preserve"
+                >
+                  <g style="opacity: 0.5">
+                    <path
+                      style="fill: #b87760"
+                      d="M22.458,2.145c168.915,8.823,339.219,12.563,508.304,14.913
+             c56.478,0.688,112.956,1.133,169.435,0.805c0.828-0.005,1.504,0.663,1.509,1.491c0.005,0.835-0.674,1.514-1.509,1.509
+             c-112.967-0.53-225.925,1.348-338.87,3.77c-83.216,1.842-170.926,4.456-254.152,7.888c-28.239,1.235-56.478,2.444-84.717,4.06
+             c-9.509,0.544-17.659-6.723-18.203-16.232C3.604,10.145,12.264,1.503,22.458,2.145L22.458,2.145z"
+                    />
+                  </g>
+                </svg>
               </div>
-              <h4 class="text-uppercase mb-0">Gallery</h4>
-              <div class="line-img my-2">
-                <img data-src="images/line.png" class="lazy-load" alt="" />
+              <h4 style="color: #b87760" class="text-uppercase mb-0 fw-bolder">
+                Gallery
+              </h4>
+              <div>
+                <svg
+                  version="1.1"
+                  id="Layer_2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 706.373 39.706"
+                  style="enable-background: new 0 0 706.373 39.706"
+                  xml:space="preserve"
+                >
+                  <g style="opacity: 0.5">
+                    <path
+                      style="fill: #b87760"
+                      d="M22.458,2.145c168.915,8.823,339.219,12.563,508.304,14.913
+          c56.478,0.688,112.956,1.133,169.435,0.805c0.828-0.005,1.504,0.663,1.509,1.491c0.005,0.835-0.674,1.514-1.509,1.509
+          c-112.967-0.53-225.925,1.348-338.87,3.77c-83.216,1.842-170.926,4.456-254.152,7.888c-28.239,1.235-56.478,2.444-84.717,4.06
+          c-9.509,0.544-17.659-6.723-18.203-16.232C3.604,10.145,12.264,1.503,22.458,2.145L22.458,2.145z"
+                    />
+                  </g>
+                </svg>
               </div>
             </div>
             <div id="Gallery" class="swiper product-swiper overflow-hidden">
@@ -875,45 +931,25 @@
       <!-- review section  -->
       <section>
         <div
-          style="max-width: 700px; margin: auto; padding: 10px"
-          class="d-flex flex-column justify-content-between flex-sm-row align-items-center my-5 gap-2"
+          style="max-width: 900px; margin: auto; padding: 10px"
+          class="d-flex flex-column justify-content-between flex-sm-row align-items-center my-5 gap-20"
         >
-          <div
-            class="d-flex justify-content-center justify-content-sm-start align-items-center flex-column"
-          >
-            <div>
-              <img
-                style="width: 240px; height: auto"
-                src="./images/google.png"
-                alt="google"
-              />
-            </div>
-            <div
-              style="margin-top: -10px"
-              class="d-flex gap-2 align-items-center"
-            >
-              <p class="mb-0" style="font-size: 30px">5</p>
-              <img
-                class=""
-                style="width: 140px"
-                src="./images/5star.png"
-                alt="star"
-              />
-            </div>
+          <div class="d-flex">
+            <img
+              style="max-width: 250px"
+              class=""
+              src="./images/google.png"
+              alt="img"
+            />
           </div>
 
           <div class="d-flex">
-            <button
-              style="
-                font-size: 18px;
-                color: rgb(87, 87, 87);
-                width: fit-content;
-                height: fit-content;
-              "
-              class="px-4 border-1 bg-transparent rounded-2 py-2"
-            >
-              Reviews Us
-            </button>
+            <img
+              style="max-width: 250px"
+              class=""
+              src="./images/review.png"
+              alt="img"
+            />
           </div>
         </div>
       </section>
@@ -1046,7 +1082,7 @@
     <!-- footer section  -->
     <footer>
       <div class="container">
-        <div class="w-50 mx-auto">
+        <div style="max-width: 350px" class="mx-auto">
           <a href="/">
             <img class="w-100" src="./images/logo/logo.png" alt="" />
           </a>
@@ -1055,19 +1091,21 @@
           <a
             href="https://maps.app.goo.gl/1LXAmvAXni6qtD3Z7"
             target="_blank"
-            class="mb-0"
+            class="mb-0 text-center"
             style="color: black"
           >
-            5 Massey Square, East York, ON M4C 5L6, canada
+            5 Massey Square, East York, ON M4C 5L6, Canada
           </a>
           <a href="tel:tel:+16476072276" class="item-anchor"
-            >Call: +1 (647)-607-2276</a
+            >+1 (647)-607-2276</a
           >
           <a href="mailto:blushglowbar@gmail.com" class="item-anchor"
             >blushglowbar@gmail.com</a
           >
         </div>
-        <div class="d-flex gap-4 mt-5 justify-content-center">
+        <div
+          class="d-flex gap-4 mt-5 justify-content-center align-items-cente flex-wrap"
+        >
           <a style="border-bottom: 1px solid gray" href="./gellary.html"
             >Gellary</a
           >
@@ -1163,6 +1201,32 @@
       </div>
     </footer>
 
+    <!-- back to top btn  -->
+    <div class="backToTopContainer">
+      <button class="back-to-top" type="button">
+        <div class="text-container">
+          <a
+            href="tel:+16476072276"
+            style="font-size: 15px; color: rgb(87, 87, 87)"
+            class="mb-0"
+            >+1 (647)-607-2276</a
+          >
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="#D49696"
+            d="M12 13.825L8.1 17.7q-.275.275-.687.288T6.7 17.7q-.275-.275-.275-.7t.275-.7l4.6-4.6q.15-.15.325-.213t.375-.062q.2 0 .375.062t.325.213l4.6 4.6q.275.275.288.688t-.288.712q-.275.275-.7.275t-.7-.275zm0-6L8.1 11.7q-.275.275-.687.288T6.7 11.7q-.275-.275-.275-.7t.275-.7l4.6-4.6q.15-.15.325-.212T12 5.425q.2 0 .375.063t.325.212l4.6 4.6q.275.275.288.688t-.288.712q-.275.275-.7.275t-.7-.275z"
+          />
+        </svg>
+      </button>
+    </div>
+
+    <!-- start script  -->
     <script src="./js/vcard.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/plugins.js"></script>

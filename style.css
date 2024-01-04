@@ -1749,6 +1749,9 @@ span.accordion-title {
 
 .product-image {
   transition: filter 0.3s ease-in-out;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .product-item:hover .hover-overlay {
@@ -1947,17 +1950,228 @@ footer{
   transform:  translateX(-100px);
 }
 
+/* back to top button design  */
+
+button.back-to-top{
+  margin: 0 !important;
+  padding: 0 !important;
+  background: #fff;
+	height: 0px;
+  width: 0px;
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+  color: transparent;
+	clear: both;
+  visibility: hidden;
+  position: fixed;
+  cursor: pointer;
+  display: block;
+  border: none;
+  right: 50px;
+	bottom: 75px;
+  font-size: 0px;
+  outline: 0 !important;
+  z-index: 99;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+.backToTopContainer{
+  position: relative;
+}
+
+.back-to-top .text-container{
+  position: absolute;
+  background-color: #fff;
+  padding: 2px 10px;
+  border-radius: 8px;
+  top: 3px;
+  left: -160px;
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(40px);
+  transition: all 0.5s ease-in-out;
+}
+.back-to-top .text-container:after{
+  position: absolute;
+  transform: rotate(140deg);
+  right: -4.3px;
+  top: 40%;
+  content: "";
+  height: 10px;
+  width: 10px;
+  background-color: rgb(255, 255, 255);
+}
+.back-to-top:hover .text-container{
+  opacity: 1;
+  transform: translateX(0);
+  visibility: visible;
+}
+button.back-to-top::after {
+  border-bottom-color:#fff;
+      position: relative;
+  top:-24px;
+}
+
+button.back-to-top.show{
+  display: block;
+  background: #fff;
+  color: #00ab6c;
+  font-size: 25px;
+  right: 25px;
+	bottom: 50px;
+  height: 50px;
+  width: 50px;
+  visibility: visible;
+	box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 2px 4px 1px rgba(147, 24, 24, 0.25);
+}
+button.back-to-top.show:active {
+  box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+}
+
+/* facebook section  */
+.facebook {
+  max-width: 1200px;
+  margin: 60px auto;
+  height: 500px;
+  position: relative;
+}
+.facebook .fbCon {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.facebook .fbCon img {
+  border-radius: 10px;
+  object-fit: cover;
+  margin-left: 22px;
+}
+.facebook .overlay h1 {
+  font-weight: 600;
+}
+.facebook .overlay{
+  position: absolute;
+  color: white;
+  padding: 20px;
+  width: 65%;
+  height: 110%;
+  top: -22px;
+  z-index: 999;
+  background-color: #90fffb15;
+  background-image: radial-gradient(
+    at 25% 35%,
+    #9086f72d 0px,
+    transparent 50%
+  ),
+  radial-gradient(at 80% 0%, #b672ff13 0px, transparent 50%),
+  radial-gradient(at 16% 71%, #f8ffdb0c 0px, transparent 50%),
+  radial-gradient(at 72% 31%, #85ebff11 0px, transparent 50%),
+  radial-gradient(at 0% 100%, #cdffcd17 0px, transparent 50%),
+  radial-gradient(at 80% 100%, #66ffb027 0px, transparent 50%),
+  radial-gradient(at 0% 0%, #a9caff08 0px, transparent 50%);
+  backdrop-filter: blur(8px);
+  border-radius: 10px;
+  box-shadow: -10px 10px 15px #00000016;
+  display: flex;
+ flex-direction: column;
+ gap: 30px;
+ justify-content: center;
+}
+
+.facebook .overlay .link {
+  color: white;
+  background-color: #800080;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 10px -5px #d313d3;
+  transition: all 0.3s ease;
+}
+
+
+/* line  */
+#Layer_2{
+  transform: rotate(180deg);
+  width: 500px;
+  height: 100%;
+}
+#Layer_1{
+  width: 500px;
+  height: 100%;
+}
+
+.image-holder{
+  width: 100%;
+  height: 100%;
+}
+.product-item{
+  width: 100%;
+  height: 100%;
+}
+.product-image{
+  width: 100% !important;
+  height: 360px !important;
+}
+.certificate{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+}
+.certicateItem{
+  max-height: 550px !important;
+}
+.certicateItem img{
+  object-position: top center;
+}
 
 @media screen and (max-width: 576px) {
+  .icon-arrow{
+    display: none;
+ 
+  }
+  .certificate{
+    grid-template-columns: repeat(1,1fr);
+  }
   .smallText{
     font-size: 20px;
   }
   .vedioSize{
     height: 400px !important
   }
+  .facebook .overlay{
+    width: 90%;
+  }
+  .step{
+    top: -60px;
+    left: 0;
+  }
+  .stepArrow{
+    bottom: -48px;
+    left: 0;
+    transform: rotate(180deg);
+  }
+  .stepContainer{
+    margin-top: 100px;
+  }
+
+  #Layer_2{
+    transform: rotate(180deg);
+    width: 100px;
+    height: 100%;
+  }
+  #Layer_1{
+    width: 100px;
+    height: 100%;
+  }
+  
+ 
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
 
   .smallText{
     font-size: 30px;
@@ -1965,9 +2179,68 @@ footer{
   .vedioSize{
     height: 600px !important
   }
+  .facebook .overlay{
+    width: 90%;
+  }
+  .step{
+    top: -60px;
+    left: 0;
+  }
+  .stepArrow{
+    bottom: -48px;
+    left: 0;
+    transform: rotate(180deg);
+  }
+  .stepContainer{
+    margin-top: 100px;
+  }
 }
-@media (min-width: 1000px) {
+@media (min-width: 769px) {
   .smallText{
     font-size: 40px;
   }
+  .facebook .overlay{
+    width: 65%;
+  }
+  .step{
+    /* margin-top: 20px; */
+    bottom: -75px;
+    left: 0;
+  }
+  .stepArrow{
+    top: -52px;
+     left: 0;
+  }
+  .stepContainer{
+    margin-top: 0px;
+  }
+  .step-1{
+    bottom: -60% !important;
+  }
+  
 }
+
+
+@media ((min-width: 577px) and (max-width: 769px)) {
+  #Layer_2{
+    transform: rotate(180deg);
+    width: 200px;
+    height: 100%;
+  }
+  #Layer_1{
+    width: 200px;
+    height: 100%;
+  }
+}
+@media ((min-width: 770px)  and (max-width: 1280px)){
+  #Layer_2{
+    transform: rotate(180deg);
+    width: 300px;
+    height: 100%;
+  }
+  #Layer_1{
+    width: 300px;
+    height: 100%;
+  }
+}
+
