@@ -67,7 +67,7 @@ const LoadData = async () => {
       ${value
         .map((value) => {
           return `
-            <div class="hoverEffectMafuz position-relative col-md-6 col-sm-12 p-0" >
+            <div class="hoverEffectMafuz position-relative col-lg-4 col-md-6 col-sm-12 p-0" >
          
 
 
@@ -102,7 +102,7 @@ const LoadData = async () => {
               class="w-100 px-3 py-1 px-lg-5 py-lg-4 h-100 d-flex flex-column justify-content-between"
             >
               <h1
-                class="fw-bolder py-2 px-3 rounded-3 text-center"
+                class=" py-2 px-3 text-capitalize rounded-3 text-center"
                 style="
                   color: #eae8e8;
                   background-color: #312f2f67;
@@ -140,7 +140,7 @@ const LoadData = async () => {
                   >
                 </a>
                 <p
-                  style="color: #eae8e8; margin-bottom: -10px"
+                  style="color: #eae8e8; font-family: arial; margin-bottom: -10px"
                   class="fw-bold fs-1"
                 >
                   $${value.price}
