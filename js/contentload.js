@@ -2,6 +2,7 @@ const BaseApiUrl = `https://admin.blushglow.ca`;
 const BaseCongener = document.querySelector("#service-cont");
 const ReviewHome = document.querySelector("#ReviewHome");
 const ReviewMain = document.querySelector("#ReviewMain");
+const ImgGallery = document.querySelector("#imgGallery");
 function groupByCategory(arr, categoryProperty) {
   return arr.reduce((grouped, obj) => {
     const category = obj[categoryProperty];
@@ -429,10 +430,42 @@ const LoadMainReviewData = async () => {
   }
 };
 
+const LoadGalleryData = async () => {
+  try {
+    var requestOptions = {
+      method: "GET",
+      redirect: "follow",
+    };
+    const serverRes = await fetch(
+      "https://admin.blushglow.ca/api/rawdatas/1",
+      requestOptions
+    );
+
+    const { data } = await serverRes.json();
+
+    const datas = data.attributes.json;
+
+    const gallery = datas
+      .map((item) => {
+        return `<div class="">
+      <img class="" src="${item}" alt="img" />
+    </div> `;
+      })
+      .join(" ");
+
+    console.log("gallery: " + gallery);
+
+    ImgGallery.innerHTML = gallery;
+  } catch (err) {
+    console.log(err);
+  }
+};
+
 (function () {
   window.addEventListener("load", () => {
     LoadMainReviewData();
     LoadReviewData();
     LoadData();
+    LoadGalleryData();
   });
 })();

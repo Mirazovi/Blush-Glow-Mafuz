@@ -339,6 +339,18 @@ a {
   transform: scale(1.2);
   transition: transform 1s ease-in-out;
 }
+.image-holder img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center -170px;
+  
+}
+.image-holder{
+  max-height: 500px;
+  overflow: hidden;
+  border-radius: 10px;
+}
 
 .slide-clip .swiper-slide.swiper-slide-active .image-holder img {
   transform: scale(1);
@@ -1866,15 +1878,24 @@ main{
   /* transform: scale(1.1); */
 }
 .titleHoverEffect{
-  font-size: 25px;
+  font-size: 13px;
   color: white;
-  background-color: black;
+  background-color: #d49696b6;
   z-index: 999 !important;
   transform: translateX(-100%);
   transition: transform 1s ease-in-out;
 }
 .certicateItem:hover .titleHoverEffect{
   transform: translateX(0px);
+}
+
+.reviewEffect{
+  transition: all 0.5s ease-in-out;
+}
+.reviewEffect:hover{
+  transform: scale(1.07);
+  z-index: 99;
+  filter: drop-shadow(5px 5px 13px #4a494931);
 }
 
 
