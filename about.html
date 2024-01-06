@@ -16,7 +16,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
-    <link rel="icon" type="image/x-icon" href="/images/logo/icon.png">
+    <link rel="icon" type="image/x-icon" href="/images/logo/icon.png" />
     <link rel="stylesheet" type="text/css" href="style.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,6 +28,37 @@
   </head>
 
   <body>
+    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
+
+    <script>
+      var chatbox = document.getElementById("fb-customer-chat");
+      chatbox.setAttribute("page_id", "100498819355102");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          xfbml: true,
+          version: "v18.0",
+        });
+      };
+
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
+    </script>
     <!-- contact nav bar -->
     <nav>
       <section
@@ -60,7 +91,11 @@
             >
             <button
               onclick="generateVCard()"
-              style="font-size: 15px; color: rgb(87, 87, 87); border: 1px solid #D49696;"
+              style="
+                font-size: 15px;
+                color: rgb(87, 87, 87);
+                border: 1px solid #d49696;
+              "
               class="px-2 shadow-sm bg-transparent rounded-2 py-1"
             >
               Save Contact
@@ -100,11 +135,13 @@
                 aria-labelledby="offcanvasNavbarLabel"
               >
                 <div class="offcanvas-body">
-                  <ul class="navbar-nav mt-5 mt-lg-0 justify-content-end flex-grow-1 gap-3">
+                  <ul
+                    class="navbar-nav mt-5 mt-lg-0 justify-content-end flex-grow-1 gap-3"
+                  >
                     <li class="nav-item">
                       <a
                         href="/index.html"
-                        class="nav-link border px-3 "
+                        class="nav-link border px-3"
                         style="text-align: center"
                         >Home</a
                       >
@@ -128,7 +165,7 @@
                     <li class="nav-item d-lg-none">
                       <a
                         href="/reviews.html"
-                        class="nav-link border px-3 "
+                        class="nav-link border px-3"
                         style="text-align: center"
                         >Review</a
                       >
@@ -332,11 +369,11 @@
             <img data-src="images/line.png" alt="" class="lazy-load" />
           </div>
         </div>
-        
+
         <!-- certificate 1  -->
         <div class="d-flex gap-4">
           <div
-            style="overflow: hidden;"
+            style="overflow: hidden"
             class="position-relative certicateItem w-100 h-100"
           >
             <div class="position-absolute z-2">
@@ -344,7 +381,7 @@
                 class="titleHoverEffect z-3"
                 style="padding: 8px 20px; border-radius: 8px"
               >
-              Beauty Therapy
+                Beauty Therapy
               </h1>
             </div>
             <img
@@ -362,7 +399,7 @@
                 class="titleHoverEffect z-3"
                 style="padding: 8px 20px; border-radius: 8px"
               >
-              Ontario College Diploma
+                Ontario College Diploma
               </h1>
             </div>
             <img
@@ -373,7 +410,7 @@
           </div>
         </div>
         <!-- certificate 2  -->
-        <div class="d-flex gap-4 mt-4"> 
+        <div class="d-flex gap-4 mt-4">
           <div
             style="overflow: hidden"
             class="position-relative certicateItem w-100 h-100"
@@ -383,7 +420,7 @@
                 class="titleHoverEffect z-3"
                 style="padding: 8px 20px; border-radius: 8px"
               >
-              Advanced Esthetics
+                Advanced Esthetics
               </h1>
             </div>
             <img
@@ -391,7 +428,7 @@
               class="z-0 w-100 h-100 object-fit-cover"
               alt="img"
             />
-          </div> 
+          </div>
           <div
             style="overflow: hidden"
             class="position-relative certicateItem w-100 h-100"
@@ -401,7 +438,7 @@
                 class="titleHoverEffect z-3"
                 style="padding: 8px 20px; border-radius: 8px"
               >
-              Cosmetology Hobbies
+                Cosmetology Hobbies
               </h1>
             </div>
             <img
@@ -409,7 +446,7 @@
               class="z-0 w-100 h-100 object-fit-cover"
               alt="img"
             />
-          </div> 
+          </div>
           <div
             style="overflow: hidden"
             class="position-relative certicateItem w-100 h-100"
@@ -419,7 +456,7 @@
                 class="titleHoverEffect z-3"
                 style="padding: 8px 20px; border-radius: 8px"
               >
-              Hydra Peel
+                Hydra Peel
               </h1>
             </div>
             <img
@@ -427,18 +464,22 @@
               class="z-0 w-100 h-100 object-fit-cover"
               alt="img"
             />
-          </div> 
+          </div>
         </div>
       </section>
-     
+
       <!-- instagram section  -->
       <section data-aos="fade-up" class="instagram my-5 py-5">
         <div class="container">
           <h4 class="text-center py-3">Follow us on Facebook</h4>
 
-          <div  class="row d-flex flex-wrap my-3 g-0">
+          <div class="row d-flex flex-wrap my-3 g-0">
             <figure class="col instagram-item magnific position-relative">
-              <a href="https://www.facebook.com/Blushglowbeautybar" target="_blank" class="">
+              <a
+                href="https://www.facebook.com/Blushglowbeautybar"
+                target="_blank"
+                class=""
+              >
                 <img
                   data-src="images/insta-item1.jpg"
                   alt="instagram"
@@ -457,7 +498,11 @@
               </a>
             </figure>
             <figure class="col instagram-item magnific position-relative">
-              <a href="https://www.facebook.com/Blushglowbeautybar" target="_blank" class="">
+              <a
+                href="https://www.facebook.com/Blushglowbeautybar"
+                target="_blank"
+                class=""
+              >
                 <img
                   data-src="images/insta-item3.jpg"
                   alt="instagram"
@@ -476,7 +521,11 @@
               </a>
             </figure>
             <figure class="col instagram-item magnific position-relative">
-              <a href="https://www.facebook.com/Blushglowbeautybar" target="_blank" class="">
+              <a
+                href="https://www.facebook.com/Blushglowbeautybar"
+                target="_blank"
+                class=""
+              >
                 <img
                   data-src="images/insta-item4.jpg"
                   alt="instagram"
@@ -495,7 +544,11 @@
               </a>
             </figure>
             <figure class="col instagram-item magnific position-relative">
-              <a href="https://www.facebook.com/Blushglowbeautybar" target="_blank" class="">
+              <a
+                href="https://www.facebook.com/Blushglowbeautybar"
+                target="_blank"
+                class=""
+              >
                 <img
                   data-src="images/insta-item5.jpg"
                   alt="instagram"
@@ -514,7 +567,11 @@
               </a>
             </figure>
             <figure class="col instagram-item magnific position-relative">
-              <a href="https://www.facebook.com/Blushglowbeautybar" target="_blank" class="">
+              <a
+                href="https://www.facebook.com/Blushglowbeautybar"
+                target="_blank"
+                class=""
+              >
                 <img
                   data-src="images/insta-item6.jpg"
                   alt="instagram"
@@ -644,7 +701,7 @@
           </ul>
         </div>
       </div>
-      <div style="background-color: #d49696b6;" class="py-3 text-center mt-5">
+      <div style="background-color: #d49696b6" class="py-3 text-center mt-5">
         <p class="mb-0" style="color: white">
           &copy; 2023 Blush & Glow Beauty. Designed & Develop by
           <a
@@ -660,8 +717,8 @@
       </div>
     </footer>
 
-     <!-- back to top btn  -->
-     <div class="backToTopContainer">
+    <!-- back to top btn  -->
+    <div class="backToTopContainer">
       <button class="back-to-top" type="button">
         <div class="text-container">
           <a
