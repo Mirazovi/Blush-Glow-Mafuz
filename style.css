@@ -1849,13 +1849,21 @@ main{
   background-color: #D49696;
   border-radius: 10px;
 }
+.certicateItem{
+  transition: all 0.5s ease-in-out;
+}
+.certicateItem:hover{
+  transform: scale(1.07);
+  z-index: 99;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
 
 .certicateItem img{
   transition: transform 1s ease-in-out;
   border-radius: 8px;
 }
 .certicateItem:hover img{
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
 }
 .titleHoverEffect{
   font-size: 25px;
@@ -2096,11 +2104,11 @@ button.back-to-top.show:active {
 /* line  */
 #Layer_2{
   transform: rotate(180deg);
-  width: 500px;
+  width: 450px;
   height: 100%;
 }
 #Layer_1{
-  width: 500px;
+  width: 450px;
   height: 100%;
 }
 
@@ -2127,6 +2135,41 @@ button.back-to-top.show:active {
 .certicateItem img{
   object-position: top center;
 }
+
+@media  (max-width:576px) {
+  #Layer_2{
+    transform: rotate(180deg);
+    width: 100px;
+    height: 100%;
+  }
+  #Layer_1{
+    width: 100px;
+    height: 100%;
+  }
+}
+@media ((min-width: 577px) and (max-width: 1023px)) {
+  #Layer_2{
+    transform: rotate(180deg);
+    width: 150px;
+    height: 100%;
+  }
+  #Layer_1{
+    width: 150px;
+    height: 100%;
+  }
+}
+@media ((min-width: 1024px)  and (max-width: 1420px)){
+  #Layer_2{
+    transform: rotate(180deg);
+    width: 300px;
+    height: 100%;
+  }
+  #Layer_1{
+    width: 300px;
+    height: 100%;
+  }
+}
+
 
 @media screen and (max-width: 576px) {
   .icon-arrow{
@@ -2156,16 +2199,6 @@ button.back-to-top.show:active {
   }
   .stepContainer{
     margin-top: 100px;
-  }
-
-  #Layer_2{
-    transform: rotate(180deg);
-    width: 100px;
-    height: 100%;
-  }
-  #Layer_1{
-    width: 100px;
-    height: 100%;
   }
   
  
@@ -2221,26 +2254,4 @@ button.back-to-top.show:active {
 }
 
 
-@media ((min-width: 577px) and (max-width: 769px)) {
-  #Layer_2{
-    transform: rotate(180deg);
-    width: 200px;
-    height: 100%;
-  }
-  #Layer_1{
-    width: 200px;
-    height: 100%;
-  }
-}
-@media ((min-width: 770px)  and (max-width: 1280px)){
-  #Layer_2{
-    transform: rotate(180deg);
-    width: 300px;
-    height: 100%;
-  }
-  #Layer_1{
-    width: 300px;
-    height: 100%;
-  }
-}
 
