@@ -186,49 +186,71 @@
         </div>
       </section>
     </nav>
+
+    <section class="hero-section jarallax">
+      <div class="py-5">
+        <div class="container">
+          <div class="row">
+            <div
+              class="d-flex flex-wrap flex-column justify-content-center align-items-center my-5 py-5 text-white"
+            >
+              <h1
+                class="page-title text-uppercase"
+                style="text-shadow: 2px 2px 2px #240f0a"
+              >
+                gallery
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="jarallax-container-0"
+        style="
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          z-index: -100;
+          clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px 100%);
+        "
+      >
+        <img
+          data-src="images/gallery/galleryBg.webp"
+          alt="Image"
+          class="jarallax-img lazy-load"
+          style="
+            object-fit: cover;
+            object-position: 50% 50%;
+            max-width: none;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 1521.6px;
+            height: 100%;
+            overflow: hidden;
+            pointer-events: none;
+            transform-style: preserve-3d;
+            backface-visibility: hidden;
+            will-change: transform, opacity;
+            margin-top: -26.25px;
+            transform: translate3d(0px, -94.9px, 0px);
+          "
+        />
+      </div>
+    </section>
     <!-- main about section  -->
 
     <main>
-      <div class="text-center my-5"><h1>Gellary</h1></div>
+      <!-- <div class="text-center my-5"><h1>Gellary</h1></div> -->
       <!--Gellary section  -->
-      <section class="container">
-        <div class="gellery-img-container">
-          <div class="">
+      <section class="container mt-5">
+        <div id="imgGallery" class="gellery-img-container">
+          <!-- <div class="">
             <img class="" src="./images/service/img (1).jpg" alt="img" />
-          </div>
-          <div class="">
-            <img class="" src="./images/service/img (2).jpg" alt="img" />
-          </div>
-          <div class="">
-            <img class="" src="./images/service/img (3).jpg" alt="img" />
-          </div>
-          <div class="">
-            <img class="" src="./images/service/img (12).jpg" alt="img" />
-          </div>
-          <div class="">
-            <img class="" src="./images/service/img (11).jpg" alt="img" />
-          </div>
-          <div class="">
-            <img class="" src="./images/service/img (10).jpg" alt="img" />
-          </div>
-          <div class="">
-            <img class="" src="./images/service/img (9).jpg" alt="img" />
-          </div>
-          <div class="">
-            <img class="" src="./images/service/img (8).jpg" alt="img" />
-          </div>
-          <div class="">
-            <img class="" src="./images/service/img (7).jpg" alt="img" />
-          </div>
-          <div class="">
-            <img class="" src="./images/service/img (6).jpg" alt="img" />
-          </div>
-          <div class="">
-            <img class="" src="./images/service/img (5).jpg" alt="img" />
-          </div>
-          <div class="">
-            <img class="" src="./images/service/img (4).jpg" alt="img" />
-          </div>
+          </div> -->
         </div>
       </section>
 
@@ -503,6 +525,7 @@
       </button>
     </div>
 
+    <script src="js/contentload.js"></script>
     <script src="./js/vcard.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/plugins.js"></script>
