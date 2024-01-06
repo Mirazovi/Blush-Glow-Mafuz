@@ -10,7 +10,7 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
-    <link rel="icon" type="image/x-icon" href="/images/logo/icon.png">
+    <link rel="icon" type="image/x-icon" href="/images/logo/icon.png" />
     <link rel="stylesheet" type="text/css" href="icomoon/icomoon.css" />
     <link rel="stylesheet" type="text/css" href="css/vendor.css" />
     <link
@@ -28,6 +28,37 @@
   </head>
 
   <body>
+    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
+
+    <script>
+      var chatbox = document.getElementById("fb-customer-chat");
+      chatbox.setAttribute("page_id", "100498819355102");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          xfbml: true,
+          version: "v18.0",
+        });
+      };
+
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
+    </script>
     <!-- contact nav bar -->
     <nav>
       <section
@@ -60,7 +91,11 @@
             >
             <button
               onclick="generateVCard()"
-              style="font-size: 15px; color: rgb(87, 87, 87); border: 1px solid #D49696;"
+              style="
+                font-size: 15px;
+                color: rgb(87, 87, 87);
+                border: 1px solid #d49696;
+              "
               class="px-2 shadow-sm bg-transparent rounded-2 py-1"
             >
               Save Contact
@@ -100,11 +135,13 @@
                 aria-labelledby="offcanvasNavbarLabel"
               >
                 <div class="offcanvas-body">
-                  <ul class="navbar-nav mt-5 mt-lg-0 justify-content-end flex-grow-1 gap-3">
+                  <ul
+                    class="navbar-nav mt-5 mt-lg-0 justify-content-end flex-grow-1 gap-3"
+                  >
                     <li class="nav-item">
                       <a
                         href="/index.html"
-                        class="nav-link border px-3 "
+                        class="nav-link border px-3"
                         style="text-align: center"
                         >Home</a
                       >
@@ -112,7 +149,7 @@
                     <li class="nav-item">
                       <a
                         href="/about.html"
-                        class="nav-link border px-3 "
+                        class="nav-link border px-3"
                         style="text-align: center"
                         >About</a
                       >
@@ -128,7 +165,7 @@
                     <li class="nav-item d-lg-none">
                       <a
                         href="/reviews.html"
-                        class="nav-link border px-3 "
+                        class="nav-link border px-3"
                         style="text-align: center"
                         >Review</a
                       >
@@ -199,9 +236,13 @@
         <div class="container">
           <h4 class="text-center py-3">Follow us on Facebook</h4>
 
-          <div  class="row d-flex flex-wrap my-3 g-0">
+          <div class="row d-flex flex-wrap my-3 g-0">
             <figure class="col instagram-item magnific position-relative">
-              <a href="https://www.facebook.com/Blushglowbeautybar" target="_blank" class="">
+              <a
+                href="https://www.facebook.com/Blushglowbeautybar"
+                target="_blank"
+                class=""
+              >
                 <img
                   data-src="images/insta-item1.jpg"
                   alt="instagram"
@@ -220,7 +261,11 @@
               </a>
             </figure>
             <figure class="col instagram-item magnific position-relative">
-              <a href="https://www.facebook.com/Blushglowbeautybar" target="_blank" class="">
+              <a
+                href="https://www.facebook.com/Blushglowbeautybar"
+                target="_blank"
+                class=""
+              >
                 <img
                   data-src="images/insta-item3.jpg"
                   alt="instagram"
@@ -239,7 +284,11 @@
               </a>
             </figure>
             <figure class="col instagram-item magnific position-relative">
-              <a href="https://www.facebook.com/Blushglowbeautybar" target="_blank" class="">
+              <a
+                href="https://www.facebook.com/Blushglowbeautybar"
+                target="_blank"
+                class=""
+              >
                 <img
                   data-src="images/insta-item4.jpg"
                   alt="instagram"
@@ -258,7 +307,11 @@
               </a>
             </figure>
             <figure class="col instagram-item magnific position-relative">
-              <a href="https://www.facebook.com/Blushglowbeautybar" target="_blank" class="">
+              <a
+                href="https://www.facebook.com/Blushglowbeautybar"
+                target="_blank"
+                class=""
+              >
                 <img
                   data-src="images/insta-item5.jpg"
                   alt="instagram"
@@ -277,7 +330,11 @@
               </a>
             </figure>
             <figure class="col instagram-item magnific position-relative">
-              <a href="https://www.facebook.com/Blushglowbeautybar" target="_blank" class="">
+              <a
+                href="https://www.facebook.com/Blushglowbeautybar"
+                target="_blank"
+                class=""
+              >
                 <img
                   data-src="images/insta-item6.jpg"
                   alt="instagram"
@@ -406,7 +463,7 @@
           </ul>
         </div>
       </div>
-      <div style="background-color: #d49696b6;" class="py-3 text-center mt-5">
+      <div style="background-color: #d49696b6" class="py-3 text-center mt-5">
         <p class="mb-0" style="color: white">
           &copy; 2023 Blush & Glow Beauty. Designed & Develop by
           <a
@@ -421,30 +478,30 @@
         <img src="./images/tex_flower.svg" alt="blush & glow" />
       </div>
     </footer>
- <!-- back to top btn  -->
- <div class="backToTopContainer">
-  <button class="back-to-top" type="button">
-    <div class="text-container">
-      <a
-        href="tel:+16476072276"
-        style="font-size: 15px; color: rgb(87, 87, 87)"
-        class="mb-0"
-        >+1 (647)-607-2276</a
-      >
+    <!-- back to top btn  -->
+    <div class="backToTopContainer">
+      <button class="back-to-top" type="button">
+        <div class="text-container">
+          <a
+            href="tel:+16476072276"
+            style="font-size: 15px; color: rgb(87, 87, 87)"
+            class="mb-0"
+            >+1 (647)-607-2276</a
+          >
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="#D49696"
+            d="M12 13.825L8.1 17.7q-.275.275-.687.288T6.7 17.7q-.275-.275-.275-.7t.275-.7l4.6-4.6q.15-.15.325-.213t.375-.062q.2 0 .375.062t.325.213l4.6 4.6q.275.275.288.688t-.288.712q-.275.275-.7.275t-.7-.275zm0-6L8.1 11.7q-.275.275-.687.288T6.7 11.7q-.275-.275-.275-.7t.275-.7l4.6-4.6q.15-.15.325-.212T12 5.425q.2 0 .375.063t.325.212l4.6 4.6q.275.275.288.688t-.288.712q-.275.275-.7.275t-.7-.275z"
+          />
+        </svg>
+      </button>
     </div>
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="32"
-      height="32"
-      viewBox="0 0 24 24"
-    >
-      <path
-        fill="#D49696"
-        d="M12 13.825L8.1 17.7q-.275.275-.687.288T6.7 17.7q-.275-.275-.275-.7t.275-.7l4.6-4.6q.15-.15.325-.213t.375-.062q.2 0 .375.062t.325.213l4.6 4.6q.275.275.288.688t-.288.712q-.275.275-.7.275t-.7-.275zm0-6L8.1 11.7q-.275.275-.687.288T6.7 11.7q-.275-.275-.275-.7t.275-.7l4.6-4.6q.15-.15.325-.212T12 5.425q.2 0 .375.063t.325.212l4.6 4.6q.275.275.288.688t-.288.712q-.275.275-.7.275t-.7-.275z"
-      />
-    </svg>
-  </button>
-</div>
 
     <script src="./js/vcard.js"></script>
     <script src="js/jquery.min.js"></script>
