@@ -3,6 +3,9 @@ const BaseCongener = document.querySelector("#service-cont");
 const ReviewHome = document.querySelector("#ReviewHome");
 const ReviewMain = document.querySelector("#ReviewMain");
 const ImgGallery = document.querySelector("#imgGallery");
+const subGallery = document.querySelector("#subGallery");
+const facebookGallery = document.querySelector("#facebookGallery");
+
 function groupByCategory(arr, categoryProperty) {
   return arr.reduce((grouped, obj) => {
     const category = obj[categoryProperty];
@@ -77,7 +80,7 @@ const LoadData = async () => {
             </g>
           </svg>
           </div>
-          <h4 style="color:  #b87760;" class="text-uppercase mb-0 fw-bolder">${key}</h4>
+          <h4 style="color:  #b87760; letter-spacing: 0.2rem" class="text-uppercase fs-lg-1 fs-2 mb-0">${key}</h4>
          <div>
          <svg
          version="1.1"
@@ -181,8 +184,8 @@ const LoadData = async () => {
                   >
                 </a>
                 <p
-                  style="color: #eae8e8; font-family: arial; margin-bottom: -10px"
-                  class="fw-bold fs-1"
+                  style="color: #eae8e8; font-family: 'Times New Roman', serif; margin-bottom: -10px; font-size: 50px"
+                  class="fw-bold"
                 >
                   $${value.price}
                 </p>
@@ -453,9 +456,92 @@ const LoadGalleryData = async () => {
       })
       .join(" ");
 
-    console.log("gallery: " + gallery);
-
     ImgGallery.innerHTML = gallery;
+  } catch (err) {
+    console.log(err);
+  }
+};
+
+const LoadSubGalleryData = async () => {
+  try {
+    var requestOptions = {
+      method: "GET",
+      redirect: "follow",
+    };
+    const serverRes = await fetch(
+      "https://admin.blushglow.ca/api/rawdatas/1",
+      requestOptions
+    );
+
+    const { data } = await serverRes.json();
+
+    const datas = data.attributes.json;
+
+    const gallery = datas
+      .slice(2)
+      .map((item) => {
+        return ` <div class="swiper-slide">
+        <div class="product-item">
+          <div class="image-holder position-relative">
+            <a href="./gellary.html" >
+              <img
+              loading="lazy"
+                src="${item}"
+                alt="categories"
+                style="object-fit: cover"
+                class="product-image"
+              />
+            </a>
+          </div>
+        </div>
+      </div> `;
+      })
+      .join(" ");
+
+    console.log("my gallery", gallery);
+
+    subGallery.innerHTML = gallery;
+  } catch (err) {
+    console.log(err);
+  }
+};
+const LoadfacebookGalleryData = async () => {
+  try {
+    var requestOptions = {
+      method: "GET",
+      redirect: "follow",
+    };
+    const serverRes = await fetch(
+      "https://admin.blushglow.ca/api/rawdatas/2",
+      requestOptions
+    );
+
+    const { data } = await serverRes.json();
+
+    const datas = data.attributes.json;
+    console.log(data);
+
+    const gallery = datas
+      .map((item) => {
+        return `<figure class="col instagram-item magnific position-relative">
+        <a
+          href="https://www.facebook.com/Blushglowbeautybar"
+          target="_blank"
+          class="w-100 h-100"
+          style="z-index: 999"
+        >
+          <img
+          loading="lazy"
+            src="${item}"
+            alt="instagram"
+            class="insta-image"
+          />
+        </a>
+      </figure>`;
+      })
+      .join(" ");
+
+    facebookGallery.innerHTML = gallery;
   } catch (err) {
     console.log(err);
   }
@@ -467,5 +553,7 @@ const LoadGalleryData = async () => {
     LoadReviewData();
     LoadData();
     LoadGalleryData();
+    LoadSubGalleryData();
+    LoadfacebookGalleryData();
   });
 })();
