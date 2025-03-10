@@ -23,6 +23,8 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr); /* 1 column by default */
     gap: 16px;
+    justify-content: center;
+    align-items: center;
     
 }
 .image-item:hover {
@@ -123,6 +125,14 @@
 .service{
     font-size: 2rem;
     font-weight: bold;
-    margin-bottom: 30px;
-    margin-top: 60px;
+    
+    text-align: center;
+
+}
+.service-wrap{
+    margin-bottom: 40px;
+    margin-top: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
