@@ -1,0 +1,128 @@
+/* Section styling */
+#service-cont {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.service-heading {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Image wrapper for responsive grid */
+.image-wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* 1 column by default */
+    gap: 16px;
+    
+}
+.image-item:hover {
+    transform: scale(1.05); /* Scale the image wrapper slightly */
+}
+/* Tablets (≥640px) */
+@media (min-width: 640px) {
+    .image-wrapper {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    }
+}
+
+/* Small desktops (≥768px) */
+@media (min-width: 768px) {
+    .image-wrapper {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    }
+}
+
+/* Larger desktops (≥1024px) */
+@media (min-width: 1024px) {
+    .image-wrapper {
+        grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    }
+}
+
+/* Image item styles */
+.image-item {
+    width: 100%;
+    transition: transform 0.3s ease; 
+}
+
+
+.image-item img {
+   border-top-right-radius: 10px;
+   border-top-left-radius: 10px;
+    width: 100%;
+    height: 300px;
+    display: block;
+    object-fit: cover;
+}
+
+/* Bottom field styling (overlay) */
+.bottom-field {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+/* Price text styling */
+.price {
+    color: white;
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Facebook link styling */
+.facebook-link {
+    color: white; /* Blue color for the link */
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.facebook-div{
+    background-color: #4b9cdb;
+    text-decoration-color: blue;
+    padding: 10px 15px 10px 15px;
+    border-radius: 2px;
+    color: white;
+    border-radius: 0 0 10px 0 ;
+}
+.facebook-div:hover{
+    background-color: #5e9fd0;
+}
+.price-facebook{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.service-cart-name{
+    font-size: large;
+    margin: 0;
+    color: white; 
+    padding-left: 10px;
+}
+
+.service-description{
+    width: 800px;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+.service{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 60px;
+}
