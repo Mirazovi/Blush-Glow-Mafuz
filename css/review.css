@@ -1,0 +1,71 @@
+/* Review Section */
+.review-section {
+    text-align: center;
+    padding: 6px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+}
+
+/* Review Cards */
+.review-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 90%;
+    max-width: 500px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.review-card:hover {
+    transform: scale(1.05);
+}
+
+/* Stars */
+.stars {
+    margin: 10px 0;
+}
+
+/* Image */
+.img-review {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 10px;
+}
+
+/* Mobile - 1 review per row */
+@media (max-width: 767px) {
+    #review-container {
+        display: block; /* Stack reviews vertically */
+    }
+    .review-card {
+        width: 100%;
+    }
+}
+
+/* Tablet - 2 reviews per row */
+@media (min-width: 768px) and (max-width: 1024px) {
+    #review-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .review-card {
+        width: 48%; /* Around 2 items per row */
+    }
+}
+
+/* Desktop - 3 reviews per row */
+@media (min-width: 1025px) {
+    #review-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .review-card {
+        width: 30%; /* 3 items per row */
+    }
+}
