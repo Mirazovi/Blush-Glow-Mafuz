@@ -1,33 +1,21 @@
 const reviews = [
     {
-      name: "Subbir Rahaman",
-      review: "Absolutely loved this product! The quality is top-notch and the service was excellent. Highly recommend!",
+      name: "Jashua Yosores",
+      review: "Highly recommended. Nazma does the best job and takes care of her client. I often come here for waxing and facial. And i am 100% satisfied with my results.",
       rating: 5,
-      image: "/images/single-image1.jpg"
+      image: "/images/profileMale.jpeg"
     },
     {
-      name: "Miraz Hossain Ovi",
-      review: "Great experience overall, but shipping took longer than expected.",
-      rating: 4,
-      image: "/images/single-image2.jpg"
+      name: "PALAK SHARMA",
+      review: "I had my threading done at this place, and I absolutely loved the outcome! I'm so happy with the result. Nazma who did my brows was very accommodating and really listened to what I wanted. She was open to suggestions and made sure I was comfortable throughout the process. Highly recommend!!",
+      rating: 5,
+      image: "/images/profileFemal.jpeg"
     },
     {
-      name: "Md Jewel Hossain Khan",
-      review: "The product quality is good, but customer support could be better.",
-      rating: 3,
-      image: "/images/insta-item6.jpg"
-    },
-    {
-      name: "Md Jewel Hossain Khan",
-      review: "The product quality is good, but customer support could be better.",
-      rating: 3,
-      image: "/images/insta-item6.jpg"
-    },
-    {
-      name: "Md Jewel Hossain Khan",
-      review: "The product quality is good, but customer support could be better.",
-      rating: 3,
-      image: "/images/insta-item6.jpg"
+      name: "Himani Himani",
+      review: "I had waxing and my eyebrows done at this salon, and it was a great experience! The place was spotless, and Nazma was so kind and professional. She paid attention to every detail and took her time to ensure everything was perfect. I’m very happy with the results!",
+      rating: 5,
+      image: "/images/profileFemal.jpeg"
     },
 ];
 
@@ -48,11 +36,14 @@ document.addEventListener("DOMContentLoaded", function () {
                      </svg>`;
         }
 
-        reviewCard.innerHTML = `
-            <p>${review.review}</p>
+        reviewCard.innerHTML = `'
+        <a class="review-container" href="https://www.google.com/maps/place/Blush+%26+Glow+Beauty+Bar/@43.7272373,-79.2556249,17z/data=!3m1!4b1!4m6!3m5!1s0x38d840a6f5aec37:0x1292455a177a54ce!8m2!3d43.7272373!4d-79.25305!16s%2Fg%2F11s1sbcm3v?entry=ttu&g_ep=EgoyMDI1MDMwNC4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+        <p class="review-text">${review.review}</p>
             <div class="stars">${stars}</div>
             <img class="img-review" src="${review.image}" alt="${review.name}">
             <h4>${review.name}</h4>
+        </a>
+            
         `;
 
         reviewContainer.appendChild(reviewCard);

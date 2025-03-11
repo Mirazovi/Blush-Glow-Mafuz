@@ -4,7 +4,15 @@
     padding: 6px;
     /* background-color: #f8f8f8; */
 }
-
+.review-container{
+    /* display: flex;
+    flex-direction: column; */
+}
+.review-text{
+    flex-grow: 1;
+    text-align: start;
+    font-family: Arial, Helvetica, sans-serif;
+}
 /* Review Cards */
 .review-card {
     background: white;
@@ -34,6 +42,7 @@
     object-fit: cover;
     margin-top: 10px;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 /* Mobile - 1 review per row */

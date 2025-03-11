@@ -13,6 +13,7 @@
     <link rel="icon" type="image/x-icon" href="/images/logo/icon.png" />
     <link rel="stylesheet" type="text/css" href="icomoon/icomoon.css" />
     <link rel="stylesheet" type="text/css" href="css/vendor.css" />
+    <link rel="stylesheet" href="css/gallary.css">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
@@ -244,14 +245,38 @@
     <!-- main about section  -->
 
     <main>
-      <!-- <div class="text-center my-5"><h1>Gellary</h1></div> -->
       <!--Gellary section  -->
       <section class="container mt-5">
-        <div id="imgGallery" class="gellery-img-container">
-          <!-- <div class="">
-            <img class="" src="./images/service/img (1).jpg" alt="img" />
-          </div> -->
-        </div>
+                  <!-- gallery container start  -->
+
+                  <div class="album">
+                    <div class="responsive-container-block bg">
+                        <div class="responsive-container-block img-cont">
+                            <img class="img" src="/images/service/img (1).jpg" onclick="openModal(0)">
+                            <img class="img" src="/images/service/img (3).jpg" onclick="openModal(1)">
+                            <img class="img img-last" src="/images/service/img (4).jpg" onclick="openModal(2)">
+                        </div>
+                        <div class="responsive-container-block img-cont">
+                            <img class="img img-big" src="/images/service/img (5) (1).jpg" onclick="openModal(3)">
+                            <img class="img img-big img-last" src="/images/service/img (2).jpg" onclick="openModal(4)">
+                        </div>
+                        <div class="responsive-container-block img-cont">
+                            <img class="img" src="/images/service/img (6).jpg" onclick="openModal(5)">
+                            <img class="img" src="/images/service/img (7).jpg" onclick="openModal(6)">
+                            <img class="img" src="/images/service/img (8).jpg" onclick="openModal(7)">
+                        </div>
+                    </div>
+                </div>
+                   <!-- Full-screen Image Modal -->
+            <div id="imageModal" class="modal">
+              <span class="close" onclick="closeModal()">&times;</span>
+              <img id="modalImage" class="modal-content">
+              <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+              <a class="next" onclick="changeImage(1)">&#10095;</a>
+          </div>
+        
+        
+                  <!-- gallery container end  -->
       </section>
       <!-- instagram section  -->
       <section data-aos="fade-up" class="instagram my-5 py-5">
@@ -273,12 +298,12 @@
         </div>
         <div class="d-flex flex-column gap-1 align-items-center mt-3">
           <a
-            href="https://maps.app.goo.gl/1LXAmvAXni6qtD3Z7"
+            href="https://maps.app.goo.gl/qmKCS6J46zk5b1Yf6"
             target="_blank"
             class="mb-0 text-center"
             style="color: black"
           >
-            5 Massey Square, East York, ON M4C 5L6, Canada
+          858 Danforth Rd, Scarborough, ON M1K 1H5, Canada.
           </a>
           <a href="tel:tel:+16476072276" class="item-anchor"
             >+1 (647)-607-2276</a
