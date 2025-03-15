@@ -13,7 +13,7 @@
     <link rel="icon" type="image/x-icon" href="/images/logo/icon.png" />
     <link rel="stylesheet" type="text/css" href="icomoon/icomoon.css" />
     <link rel="stylesheet" type="text/css" href="css/vendor.css" />
-    <link rel="stylesheet" href="css/gallary.css">
+    <link rel="stylesheet" href="css/gallary.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
@@ -147,6 +147,22 @@
                         >Home</a
                       >
                     </li>
+                    <li class="nav-item d-none d-lg-block">
+                      <a
+                        href="#service-cont"
+                        class="nav-link border px-3"
+                        style="text-align: center"
+                        >Services</a
+                      >
+                    </li>
+                    <li class="nav-item d-lg-none">
+                      <a
+                        href="/services.html"
+                        class="nav-link border px-3"
+                        style="text-align: center"
+                        >Services</a
+                      >
+                    </li>
                     <li class="nav-item">
                       <a
                         href="/about.html"
@@ -247,36 +263,67 @@
     <main>
       <!--Gellary section  -->
       <section class="container mt-5">
-                  <!-- gallery container start  -->
+        <!-- gallery container start  -->
 
-                  <div class="album">
-                    <div class="responsive-container-block bg">
-                        <div class="responsive-container-block img-cont">
-                            <img class="img" src="/images/service/img (1).jpg" onclick="openModal(0)">
-                            <img class="img" src="/images/service/img (3).jpg" onclick="openModal(1)">
-                            <img class="img img-last" src="/images/service/img (4).jpg" onclick="openModal(2)">
-                        </div>
-                        <div class="responsive-container-block img-cont">
-                            <img class="img img-big" src="/images/service/img (5) (1).jpg" onclick="openModal(3)">
-                            <img class="img img-big img-last" src="/images/service/img (2).jpg" onclick="openModal(4)">
-                        </div>
-                        <div class="responsive-container-block img-cont">
-                            <img class="img" src="/images/service/img (6).jpg" onclick="openModal(5)">
-                            <img class="img" src="/images/service/img (7).jpg" onclick="openModal(6)">
-                            <img class="img" src="/images/service/img (8).jpg" onclick="openModal(7)">
-                        </div>
-                    </div>
-                </div>
-                   <!-- Full-screen Image Modal -->
-            <div id="imageModal" class="modal">
-              <span class="close" onclick="closeModal()">&times;</span>
-              <img id="modalImage" class="modal-content">
-              <a class="prev" onclick="changeImage(-1)">&#10094;</a>
-              <a class="next" onclick="changeImage(1)">&#10095;</a>
+        <div class="album">
+          <div class="responsive-container-block bg">
+            <div class="responsive-container-block img-cont">
+              <img
+                class="img"
+                src="/images/service/img (1).jpg"
+                onclick="openModal(0)"
+              />
+              <img
+                class="img"
+                src="/images/service/img (3).jpg"
+                onclick="openModal(1)"
+              />
+              <img
+                class="img img-last"
+                src="/images/service/img (4).jpg"
+                onclick="openModal(2)"
+              />
+            </div>
+            <div class="responsive-container-block img-cont">
+              <img
+                class="img img-big"
+                src="/images/service/img (5) (1).jpg"
+                onclick="openModal(3)"
+              />
+              <img
+                class="img img-big img-last"
+                src="/images/service/img (2).jpg"
+                onclick="openModal(4)"
+              />
+            </div>
+            <div class="responsive-container-block img-cont">
+              <img
+                class="img"
+                src="/images/service/img (6).jpg"
+                onclick="openModal(5)"
+              />
+              <img
+                class="img"
+                src="/images/service/img (7).jpg"
+                onclick="openModal(6)"
+              />
+              <img
+                class="img"
+                src="/images/service/img (8).jpg"
+                onclick="openModal(7)"
+              />
+            </div>
           </div>
-        
-        
-                  <!-- gallery container end  -->
+        </div>
+        <!-- Full-screen Image Modal -->
+        <div id="imageModal" class="modal">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <img id="modalImage" class="modal-content" />
+          <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+          <a class="next" onclick="changeImage(1)">&#10095;</a>
+        </div>
+
+        <!-- gallery container end  -->
       </section>
       <!-- instagram section  -->
       <section data-aos="fade-up" class="instagram my-5 py-5">
@@ -303,7 +350,7 @@
             class="mb-0 text-center"
             style="color: black"
           >
-          858 Danforth Rd, Scarborough, ON M1K 1H5, Canada.
+            858 Danforth Rd, Scarborough, ON M1K 1H5, Canada.
           </a>
           <a href="tel:tel:+16476072276" class="item-anchor"
             >+1 (647)-607-2276</a

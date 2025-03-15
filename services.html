@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" type="image/x-icon" href="/images/logo/icon.png" />
+    <link rel="stylesheet" type="text/css" href="icomoon/icomoon.css" />
+    <link rel="stylesheet" type="text/css" href="css/vendor.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="css/services.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Prata&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
+
+    <script>
+      var chatbox = document.getElementById("fb-customer-chat");
+      chatbox.setAttribute("page_id", "100498819355102");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          xfbml: true,
+          version: "v18.0",
+        });
+      };
+
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
+    </script>
+    <!-- contact nav bar -->
+    <nav>
+      <section
+        class="py-1 text-black"
+        style="background: #33323216; font-family: 'Afacad', sans-serif"
+      >
+        <div
+          class="px-1 text-center d-lg-flex justify-content-between align-items-center"
+          style="max-width: 1264px; margin: 0 auto"
+        >
+          <p
+            class="mb-0"
+            style="font-size: 15px; color: rgb(87, 87, 87)"
+            id="currentDate"
+          ></p>
+          <div
+            class="gap-3 align-items-center d-sm-flex justify-content-center text-center"
+          >
+            <a
+              href="tel:+16476072276"
+              style="font-size: 15px; color: rgb(87, 87, 87)"
+              class="mb-0"
+              >Call: +1 (647)-607-2276</a
+            >
+            <a
+              href="mailto:blushglowbar@gmail.com"
+              style="font-size: 15px; color: rgb(87, 87, 87)"
+              class="mb-0"
+              >Email: blushglowbar@gmail.com</a
+            >
+            <button
+              onclick="generateVCard()"
+              style="
+                font-size: 15px;
+                color: rgb(87, 87, 87);
+                border: 1px solid #d49696;
+              "
+              class="px-2 shadow-sm bg-transparent rounded-2 py-1"
+            >
+              Save Contact
+            </button>
+          </div>
+        </div>
+      </section>
+      <section
+        class="navbar container navbar-expand-lg text-uppercase fs-6 py-0 px-0 border-bottom align-items-center"
+      >
+        <div class="container-fluid">
+          <div
+            class="row justify-content-between align-items-center w-100 py-2"
+          >
+            <!-- logo  -->
+            <div class="col-auto">
+              <a class="navbar-brand" href="index.html">
+                <img id="logo-top" src="images/logo/logo.png" alt="logo" />
+              </a>
+            </div>
+
+            <div class="col-auto">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div
+                class="offcanvas offcanvas-end"
+                tabindex="-1"
+                id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel"
+              >
+                <div class="offcanvas-body">
+                  <ul
+                    class="navbar-nav mt-5 mt-lg-0 justify-content-end flex-grow-1 gap-3"
+                  >
+                    <li class="nav-item">
+                      <a
+                        href="/index.html"
+                        class="nav-link border px-3"
+                        style="text-align: center"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="nav-item d-none d-lg-block">
+                      <a
+                        href="#service-cont"
+                        class="nav-link border px-3"
+                        style="text-align: center"
+                        >Services</a
+                      >
+                    </li>
+                    <li class="nav-item d-lg-none">
+                      <a
+                        href="/services.html"
+                        class="nav-link border px-3"
+                        style="text-align: center"
+                        >Services</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        href="/about.html"
+                        class="nav-link border px-3"
+                        style="text-align: center"
+                        >About</a
+                      >
+                    </li>
+
+                    <li class="nav-item d-lg-none">
+                      <a
+                        href="/gellary.html"
+                        class="nav-link border px-3"
+                        style="text-align: center"
+                        >Gallery</a
+                      >
+                    </li>
+                    <li class="nav-item d-lg-none">
+                      <a
+                        href="/reviews.html"
+                        class="nav-link border px-3"
+                        style="text-align: center"
+                        >Review</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        href="/contact.html"
+                        class="nav-link border px-3 active"
+                        style="text-align: center"
+                        >Contact</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </nav>
+
+    <!-- services section start -->
+    <section id="service-cont" class="w-100 overflow-x-hidden">
+      <div class="container">
+        <h1 class="service-heading">Our Services</h1>
+        <div class="service-wrap">
+          <div class="line-img my-2">
+            <img data-src="images/line.png" alt="" class="lazy-load" />
+          </div>
+          <h1 class="service">FACIAL</h1>
+          <div class="line-img my-2">
+            <img data-src="images/line.png" alt="" class="lazy-load" />
+          </div>
+        </div>
+        <div class="image-wrapper">
+          <!-- Image Item 1 -->
+          <div class="image-item">
+            <div class="image-container">
+              <img src="images/service/Acne Treatment.webp" alt="Image 1" />
+            </div>
+            <div class="bottom-field">
+              <div>
+                <h1 class="service-cart-name">Acne Treatment</h1>
+              </div>
+              <div class="price-facebook">
+                <h5 class="price">$75 & UP</h5>
+                <div class="facebook-div">
+                  <a
+                    href="https://www.facebook.com/Blushglowbeautybar/"
+                    target="_blank"
+                    class="facebook-link"
+                    >F</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Image Item 2 -->
+          <div class="image-item">
+            <img src="images/service/Antiaging Facial.webp" alt="Image 2" />
+            <div class="bottom-field">
+              <div>
+                <h1 class="service-cart-name">Antiaging Facial</h1>
+              </div>
+              <div class="price-facebook">
+                <h5 class="price">$80</h5>
+                <div class="facebook-div">
+                  <a
+                    href="https://www.facebook.com/Blushglowbeautybar/"
+                    target="_blank"
+                    class="facebook-link"
+                    >F</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Image Item 3 -->
+          <div class="image-item">
+            <img src="images/service/Face Lifting.webp" alt="Image 4" />
+            <div class="bottom-field">
+              <div>
+                <h1 class="service-cart-name">Face Lifting</h1>
+              </div>
+              <div class="price-facebook">
+                <h5 class="price">$100</h5>
+                <div class="facebook-div">
+                  <a
+                    href="https://www.facebook.com/Blushglowbeautybar/"
+                    target="_blank"
+                    class="facebook-link"
+                    >F</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Image Item 4 -->
+          <div class="image-item">
+            <img src="images/service/Hydra Facial.webp" alt="Image 4" />
+            <div class="bottom-field">
+              <div>
+                <h1 class="service-cart-name">Hydra Facial</h1>
+              </div>
+              <div class="price-facebook">
+                <h5 class="price">$95</h5>
+                <div class="facebook-div">
+                  <a
+                    href="https://www.facebook.com/Blushglowbeautybar/"
+                    target="_blank"
+                    class="facebook-link"
+                    >F</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Image Item 5 -->
+          <div class="image-item">
+            <img src="images/service/Microdermabrasion.webp" alt="Image 4" />
+            <div class="bottom-field">
+              <div>
+                <h1 class="service-cart-name">Mini Facial</h1>
+              </div>
+              <div class="price-facebook">
+                <h5 class="price">$40</h5>
+                <div class="facebook-div">
+                  <a
+                    href="https://www.facebook.com/Blushglowbeautybar/"
+                    target="_blank"
+                    class="facebook-link"
+                    >F</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Image Item 6 -->
+          <div class="image-item">
+            <img src="images/service/Microneedling.webp" alt="Image 4" />
+            <div class="bottom-field">
+              <div>
+                <h1 class="service-cart-name">Hydrating Facial</h1>
+              </div>
+              <div class="price-facebook">
+                <h5 class="price">$75</h5>
+                <div class="facebook-div">
+                  <a
+                    href="https://www.facebook.com/Blushglowbeautybar/"
+                    target="_blank"
+                    class="facebook-link"
+                    >F</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Image Item 7 -->
+          <div class="image-item">
+            <img src="images/service/Regular Facial.webp" alt="Image 4" />
+            <div class="bottom-field">
+              <div>
+                <h1 class="service-cart-name">Regular Facial</h1>
+              </div>
+              <div class="price-facebook">
+                <h5 class="price">$60</h5>
+                <div class="facebook-div">
+                  <a
+                    href="https://www.facebook.com/Blushglowbeautybar/"
+                    target="_blank"
+                    class="facebook-link"
+                    >F</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Threading service  -->
+        <div class="service-wrap">
+          <div class="line-img my-2">
+            <img data-src="images/line.png" alt="" class="lazy-load" />
+          </div>
+          <h1 class="service">THREADING</h1>
+          <div class="line-img my-2">
+            <img data-src="images/line.png" alt="" class="lazy-load" />
+          </div>
+        </div>
+        <div class="image-wrapper">
+          <!-- Image Item 1 -->
+          <div class="image-item">
+            <div class="image-container">
+              <img
+                src="images/service/Eye Brows Threading.webp"
+                alt="Image 1"
+              />
+            </div>
+            <div class="bottom-field">
+              <div>
+                <h1 class="service-cart-name">Eye Brows Threading</h1>
+              </div>
+              <div class="price-facebook">
+                <h5 class="price">$10</h5>
+                <div class="facebook-div">
+                  <a
+                    href="https://www.facebook.com/Blushglowbeautybar/"
+                    target="_blank"
+                    class="facebook-link"
+                    >F</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Image Item 2 -->
+          <div class="image-item">
+            <div class="image-container">
+              <img src="images/service/Upper Lips Waxing.webp" alt="Image 1" />
+            </div>
+            <div class="bottom-field">
+              <div>
+                <h1 class="service-cart-name">Upper Lips Waxing</h1>
+              </div>
+              <div class="price-facebook">
+                <h5 class="price">$5</h5>
+                <div class="facebook-div">
+                  <a
+                    href="https://www.facebook.com/Blushglowbeautybar/"
+                    target="_blank"
+                    class="facebook-link"
+                    >F</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Image Item 5 -->
+          <div class="image-item">
+            <img src="images/service/Full Face Threading.webp" alt="Image 4" />
+            <div class="bottom-field">
+              <div>
+                <h1 class="service-cart-name">Full Face Threading</h1>
+              </div>
+              <div class="price-facebook">
+                <h5 class="price">$100</h5>
+                <div class="facebook-div">
+                  <a
+                    href="https://www.facebook.com/Blushglowbeautybar/"
+                    target="_blank"
+                    class="facebook-link"
+                    >F</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- waxing service -->
+
+        <div class="service-wrap">
+          <div class="line-img my-2">
+            <img data-src="images/line.png" alt="" class="lazy-load" />
+          </div>
+          <h1 class="service">WAXING</h1>
+          <div class="line-img my-2">
+            <img data-src="images/line.png" alt="" class="lazy-load" />
+          </div>
+        </div>
+        <div class="image-wrapper">
+          <!-- Image Item 1 -->
+          <div class="image-item">
+            <div class="image-container">
+              <img src="images/service/Bikini Waxing.webp" alt="Image 1" />
+            </div>
+            <div class="bottom-field">
+              <div>
+                <h1 class="service-cart-name">Full body</h1>
+              </div>
+              <div class="price-facebook">
+                <h5 class="price">$130</h5>
+                <div class="facebook-div">
+                  <a
+                    href="https://www.facebook.com/Blushglowbeautybar/"
+                    target="_blank"
+                    class="facebook-link"
+                    >F</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Image Item 2 -->
+          <div class="image-item">
+            <div class="image-container">
+              <img src="images/service/Brazilian Waxing.webp" alt="Image 1" />
+            </div>
+            <div class="bottom-field">
+              <div>
+                <h1 class="service-cart-name">Brazilian Waxing</h1>
+              </div>
+              <div class="price-facebook">
+                <h5 class="price">$40</h5>
+                <div class="facebook-div">
+                  <a
+                    href="https://www.facebook.com/Blushglowbeautybar/"
+                    target="_blank"
+                    class="facebook-link"
+                    >F</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Image Item 3 -->
+          <div class="image-item">
+            <div class="image-container">
+              <img src="images/service/Full Arm Waxing.webp" alt="Image 1" />
+            </div>
+            <div class="bottom-field">
+              <div>
+                <h1 class="service-cart-name">Full Arm Waxing</h1>
+              </div>
+              <div class="price-facebook">
+                <h5 class="price">$25</h5>
+                <div class="facebook-div">
+                  <a
+                    href="https://www.facebook.com/Blushglowbeautybar/"
+                    target="_blank"
+                    class="facebook-link"
+                    >F</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Image Item 4 -->
+          <div class="image-item">
+            <div class="image-container">
+              <img src="images/service/Full Leg Waxing.webp" alt="Image 1" />
+            </div>
+            <div class="bottom-field">
+              <div>
+                <h1 class="service-cart-name">Full Leg Waxing</h1>
+              </div>
+              <div class="price-facebook">
+                <h5 class="price">$45</h5>
+                <div class="facebook-div">
+                  <a
+                    href="https://www.facebook.com/Blushglowbeautybar/"
+                    target="_blank"
+                    class="facebook-link"
+                    >F</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Image Item 5 -->
+          <div class="image-item">
+            <div class="image-container">
+              <img src="images/service/Half Arm Waxing.webp" alt="Image 1" />
+            </div>
+            <div class="bottom-field">
+              <div>
+                <h1 class="service-cart-name">Half Arm Waxing</h1>
+              </div>
+              <div class="price-facebook">
+                <h5 class="price">$15</h5>
+                <div class="facebook-div">
+                  <a
+                    href="https://www.facebook.com/Blushglowbeautybar/"
+                    target="_blank"
+                    class="facebook-link"
+                    >F</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Image Item 6 -->
+          <div class="image-item">
+            <div class="image-container">
+              <img src="images/service/Half Leg Waxing.webp" alt="Image 1" />
+            </div>
+            <div class="bottom-field">
+              <div>
+                <h1 class="service-cart-name">Half Leg Waxing</h1>
+              </div>
+              <div class="price-facebook">
+                <h5 class="price">$25</h5>
+                <div class="facebook-div">
+                  <a
+                    href="https://www.facebook.com/Blushglowbeautybar/"
+                    target="_blank"
+                    class="facebook-link"
+                    >F</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Image Item 7 -->
+          <div class="image-item">
+            <div class="image-container">
+              <img src="images/service/Under Arm Waxing.webp" alt="Image 1" />
+            </div>
+            <div class="bottom-field">
+              <div>
+                <h1 class="service-cart-name">Under Arm Waxing</h1>
+              </div>
+              <div class="price-facebook">
+                <h5 class="price">$15</h5>
+                <div class="facebook-div">
+                  <a
+                    href="https://www.facebook.com/Blushglowbeautybar/"
+                    target="_blank"
+                    class="facebook-link"
+                    >F</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- instagram section  -->
+    <section data-aos="fade-up" class="instagram my-5 py-5">
+      <div class="container">
+        <h4 class="text-center py-3">Follow us on Facebook</h4>
+
+        <div id="facebookGallery" class="row d-flex flex-wrap my-3 g-0"></div>
+      </div>
+    </section>
+
+    <!-- footer section  -->
+    <footer>
+      <div class="container">
+        <div style="max-width: 350px" class="mx-auto">
+          <a href="/">
+            <img class="w-100" src="./images/logo/logo.png" alt="" />
+          </a>
+        </div>
+        <div class="d-flex flex-column gap-1 align-items-center mt-3">
+          <a
+            href="https://maps.app.goo.gl/qmKCS6J46zk5b1Yf6"
+            target="_blank"
+            class="mb-0 text-center"
+            style="color: black"
+          >
+            858 Danforth Rd, Scarborough, ON M1K 1H5, Canada.
+          </a>
+          <a href="tel:tel:+16476072276" class="item-anchor"
+            >+1 (647)-607-2276</a
+          >
+          <a href="mailto:blushglowbar@gmail.com" class="item-anchor"
+            >blushglowbar@gmail.com</a
+          >
+        </div>
+        <div
+          class="d-flex gap-4 mt-5 justify-content-center align-items-cente flex-wrap"
+        >
+          <a style="border-bottom: 1px solid gray" href="./gellary.html"
+            >Gallery</a
+          >
+          <a style="border-bottom: 1px solid gray" href="./reviews.html"
+            >Reviews</a
+          >
+          <a style="border-bottom: 1px solid gray" href="#"
+            >Terms and Conditions</a
+          >
+          <a style="border-bottom: 1px solid gray" href="#">FAQ</a>
+        </div>
+        <div class="mt-4">
+          <ul
+            class="list-unstyled d-flex flex-wrap gap-3 justify-content-center"
+          >
+            <!-- facebook  -->
+            <li>
+              <a
+                data-facebook
+                id="link-nahid-hover"
+                href="https://www.facebook.com/Blushglowbeautybar"
+                target="_blank"
+                class="text-secondary"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m13 2h-2.5A3.5 3.5 0 0 0 12 8.5V11h-2v3h2v7h3v-7h3v-3h-3V9a1 1 0 0 1 1-1h2V5z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <!-- instagram  -->
+            <li>
+              <a
+                data-instagram
+                id="link-nahid-hover"
+                href="#"
+                class="text-secondary"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M176 24H80a56.06 56.06 0 0 0-56 56v96a56.06 56.06 0 0 0 56 56h96a56.06 56.06 0 0 0 56-56V80a56.06 56.06 0 0 0-56-56m-48 152a48 48 0 1 1 48-48a48.05 48.05 0 0 1-48 48m60-96a12 12 0 1 1 12-12a12 12 0 0 1-12 12m-28 48a32 32 0 1 1-32-32a32 32 0 0 1 32 32"
+                  />
+                </svg>
+              </a>
+            </li>
+            <!-- youtube  -->
+            <li>
+              <a
+                data-youtube
+                id="link-nahid-hover"
+                href="https://www.youtube.com/@BlushGlowBeautyBar"
+                class="text-secondary"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="39"
+                  height="39"
+                  viewBox="0 0 32 32"
+                >
+                  <path
+                    d="M29.41 9.26a3.5 3.5 0 0 0-2.47-2.47C24.76 6.2 16 6.2 16 6.2s-8.76 0-10.94.59a3.5 3.5 0 0 0-2.47 2.47A36.13 36.13 0 0 0 2 16a36.13 36.13 0 0 0 .59 6.74a3.5 3.5 0 0 0 2.47 2.47c2.18.59 10.94.59 10.94.59s8.76 0 10.94-.59a3.5 3.5 0 0 0 2.47-2.47A36.13 36.13 0 0 0 30 16a36.13 36.13 0 0 0-.59-6.74M13.2 20.2v-8.4l7.27 4.2Z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div style="background-color: #d49696b6" class="py-3 text-center mt-5">
+        <p class="mb-0" style="color: white">
+          &copy; 2023 Blush & Glow Beauty. Designed & Develop by
+          <a
+            href="https://paradisesolution.us/"
+            target="_blank"
+            style="color: blue"
+            >Paradise Solution</a
+          >
+        </p>
+      </div>
+      <div id="footer-bg">
+        <img src="./images/tex_flower.svg" alt="blush & glow" />
+      </div>
+    </footer>
+
+    <!-- back to top btn  -->
+    <div class="backToTopContainer">
+      <button class="back-to-top" type="button">
+        <div class="text-container">
+          <a
+            href="tel:+16476072276"
+            style="font-size: 15px; color: rgb(87, 87, 87)"
+            class="mb-0"
+            >+1 (647)-607-2276</a
+          >
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="#D49696"
+            d="M12 13.825L8.1 17.7q-.275.275-.687.288T6.7 17.7q-.275-.275-.275-.7t.275-.7l4.6-4.6q.15-.15.325-.213t.375-.062q.2 0 .375.062t.325.213l4.6 4.6q.275.275.288.688t-.288.712q-.275.275-.7.275t-.7-.275zm0-6L8.1 11.7q-.275.275-.687.288T6.7 11.7q-.275-.275-.275-.7t.275-.7l4.6-4.6q.15-.15.325-.212T12 5.425q.2 0 .375.063t.325.212l4.6 4.6q.275.275.288.688t-.288.712q-.275.275-.7.275t-.7-.275z"
+          />
+        </svg>
+      </button>
+    </div>
+
+    <script src="./js/vcard.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/SmoothScroll.js"></script>
+    <script src="js/contentload.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const lazyImages = document.querySelectorAll(".lazy-load");
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const lazyImage = entry.target;
+              lazyImage.src = lazyImage.dataset.src;
+              observer.unobserve(lazyImage);
+            }
+          });
+        });
+
+        lazyImages.forEach((image) => {
+          observer.observe(image);
+        });
+      });
+    </script>
+    <script>
+      const currentDate = new Date();
+
+      // Format the date (you can adjust the format as needed)
+      const options = {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      };
+      const formattedDate = currentDate.toLocaleDateString("en-US", options);
+
+      // Display the date in the HTML element
+      document.getElementById("currentDate").textContent = formattedDate;
+    </script>
+  </body>
+</html>
